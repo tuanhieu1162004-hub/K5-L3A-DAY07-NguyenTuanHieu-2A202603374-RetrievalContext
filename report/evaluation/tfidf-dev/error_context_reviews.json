@@ -1,0 +1,16 @@
+[
+  {
+    "query_id": "q08",
+    "context_grade": 0,
+    "reason": "Retrieved glossary/semantic-error passages do not explain string repetition or the integer requirement.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "human_reviewed": false
+  },
+  {
+    "query_id": "q10",
+    "context_grade": 2,
+    "reason": "PDF42 explicitly says the function body runs only when called; sufficient evidence was available despite final protocol failure.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "human_reviewed": false
+  }
+]

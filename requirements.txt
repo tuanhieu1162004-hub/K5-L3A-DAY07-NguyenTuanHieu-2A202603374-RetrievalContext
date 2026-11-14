@@ -1,0 +1,7 @@
+# Python 3.13 was used. Install CPU torch separately as documented.
+sentence-transformers==5.1.2
+transformers==4.57.3
+psycopg[binary]==3.3.8
+python-dotenv==1.2.4
+huggingface-hub==0.36.2
+numpy==2.5.4

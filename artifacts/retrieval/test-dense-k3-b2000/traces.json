@@ -1,0 +1,653 @@
+[
+  {
+    "query_id": "test-new-01",
+    "split": "test",
+    "question": "In the book's PEMDAS explanation, when multiplication and division have equal precedence, in which order are they evaluated?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "465336ee49e7a2f5ececb5d9",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 33,
+        "text": "2.5    Order of operations\n\nWhen  an  expression  contains  more  than  one  operator,  the  order  of  evaluation  depends\non  theorder  of  operations.   For  mathematical  operators,  Python  follows  mathematical\nconvention. The acronymPEMDASis a useful way to remember the rules:",
+        "metadata": {
+          "chapter": 2,
+          "end_char": 2560,
+          "start_char": 2276,
+          "printed_page": 11,
+          "chapter_title": "Variables, expressions and statements"
+        },
+        "score": 0.6504576831237656,
+        "strategy": "dense",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "10a5eb21f23b8d6343d53552",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 34,
+        "text": "•  Operators with the same precedence are evaluated from left to right (except exponen-\n       tiation).  So in the expressiondegrees  /  2  *  pi, the division happens first and the\n       result is multiplied bypi. To divide by 2π, you can use parentheses or writedegrees\n       /  2  /  pi.\n\nI don’t work very hard to remember the precedence of operators.  If I can’t tell by looking\nat the expression, I use parentheses to make it obvious.\n\n2.6    String operations",
+        "metadata": {
+          "chapter": 2,
+          "end_char": 1216,
+          "start_char": 747,
+          "printed_page": 12,
+          "chapter_title": "Variables, expressions and statements"
+        },
+        "score": 0.5904199129092755,
+        "strategy": "dense",
+        "rank": 2,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "1f5d8b38cae37ddef4eb06a6",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 34,
+        "text": "•Exponentiation has the next highest precedence, so1  +  2**3is 9, not 27, and2  *\n       3**2is 18, not 36.\n\n    •Multiplication andDivision have higher precedence thanAddition andSubtraction.\n       So2*3-1is 5, not 4, and6+4/2is 8, not 5.",
+        "metadata": {
+          "chapter": 2,
+          "end_char": 741,
+          "start_char": 500,
+          "printed_page": 12,
+          "chapter_title": "Variables, expressions and statements"
+        },
+        "score": 0.5744663134535375,
+        "strategy": "dense",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[465336ee49e7a2f5ececb5d9 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 33]\n2.5    Order of operations\n\nWhen  an  expression  contains  more  than  one  operator,  the  order  of  evaluation  depends\non  theorder  of  operations.   For  mathematical  operators,  Python  follows  mathematical\nconvention. The acronymPEMDASis a useful way to remember the rules:\n\n[10a5eb21f23b8d6343d53552 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 34]\n•  Operators with the same precedence are evaluated from left to right (except exponen-\n       tiation).  So in the expressiondegrees  /  2  *  pi, the division happens first and the\n       result is multiplied bypi. To divide by 2π, you can use parentheses or writedegrees\n       /  2  /  pi.\n\nI don’t work very hard to remember the precedence of operators.  If I can’t tell by looking\nat the expression, I use parentheses to make it obvious.\n\n2.6    String operations\n\n[1f5d8b38cae37ddef4eb06a6 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 34]\n•Exponentiation has the next highest precedence, so1  +  2**3is 9, not 27, and2  *\n       3**2is 18, not 36.\n\n    •Multiplication andDivision have higher precedence thanAddition andSubtraction.\n       So2*3-1is 5, not 4, and6+4/2is 8, not 5.",
+    "context_ids": [
+      "465336ee49e7a2f5ececb5d9",
+      "10a5eb21f23b8d6343d53552",
+      "1f5d8b38cae37ddef4eb06a6"
+    ],
+    "context_chars": 1283,
+    "elapsed_ms": 161.552199992002,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "In the book's PEMDAS explanation, when multiplication and division have equal precedence, in which order are they evaluated?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    },
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "So in the expressiondegrees  /  2  *  pi, the division happens first and the\n       result is multiplied bypi.",
+          "start_char": 853,
+          "end_char": 963
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "test-new-02",
+    "split": "test",
+    "question": "Where does the book conventionally place import statements in a Python script?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "af27deb9219aaab8fa6162f6",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 33,
+        "text": "2.4. Script mode                                                                                                                              11\n\nThe first line is an assignment statement that gives a value ton.  The second line is a print\nstatement that displays the value ofn.\nWhen you type a statement, the interpreterexecutesit, which means that it does whatever\nthe statement says. In general, statements don’t have values.\n\n2.4    Script mode",
+        "metadata": {
+          "chapter": 2,
+          "end_char": 448,
+          "start_char": 0,
+          "printed_page": 11,
+          "chapter_title": "Variables, expressions and statements"
+        },
+        "score": 0.49933296449983544,
+        "strategy": "dense",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "c68331d5eaad34e17367e9cc",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "void function:A function that always returnsNone.\n\nNone: A special value returned by void functions.\n\nmodule:A file that contains a collection of related functions and other definitions.\n\nimport statement:A statement that reads a module file and creates a module object.\n\nmodule object:A value created by animportstatement that provides access to the values\n       defined in a module.",
+        "metadata": {
+          "chapter": 3,
+          "end_char": 1283,
+          "start_char": 898,
+          "printed_page": 26,
+          "chapter_title": "Functions"
+        },
+        "score": 0.48657269735851516,
+        "strategy": "dense",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "e10ecac6a58a9974976be680",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 36,
+        "text": "interactive mode:A way of using the Python interpreter by typing code at the prompt.\n\nscript mode:A way of using the Python interpreter to read code from a script and run it.\n\nscript:A program stored in a file.\n\norder of operations:Rules governing the order in which expressions involving multiple\n       operators and operands are evaluated.\n\nconcatenate:To join two operands end-to-end.",
+        "metadata": {
+          "chapter": 2,
+          "end_char": 1311,
+          "start_char": 923,
+          "printed_page": 14,
+          "chapter_title": "Variables, expressions and statements"
+        },
+        "score": 0.45730614662170743,
+        "strategy": "dense",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[af27deb9219aaab8fa6162f6 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 33]\n2.4. Script mode                                                                                                                              11\n\nThe first line is an assignment statement that gives a value ton.  The second line is a print\nstatement that displays the value ofn.\nWhen you type a statement, the interpreterexecutesit, which means that it does whatever\nthe statement says. In general, statements don’t have values.\n\n2.4    Script mode\n\n[c68331d5eaad34e17367e9cc | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 48]\nvoid function:A function that always returnsNone.\n\nNone: A special value returned by void functions.\n\nmodule:A file that contains a collection of related functions and other definitions.\n\nimport statement:A statement that reads a module file and creates a module object.\n\nmodule object:A value created by animportstatement that provides access to the values\n       defined in a module.\n\n[e10ecac6a58a9974976be680 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 36]\ninteractive mode:A way of using the Python interpreter by typing code at the prompt.\n\nscript mode:A way of using the Python interpreter to read code from a script and run it.\n\nscript:A program stored in a file.\n\norder of operations:Rules governing the order in which expressions involving multiple\n       operators and operands are evaluated.\n\nconcatenate:To join two operands end-to-end.",
+    "context_ids": [
+      "af27deb9219aaab8fa6162f6",
+      "c68331d5eaad34e17367e9cc",
+      "e10ecac6a58a9974976be680"
+    ],
+    "context_chars": 1510,
+    "elapsed_ms": 67.59580000652932,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "Where does the book conventionally place import statements in a Python script?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    },
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 55,
+          "evidence": "By  convention,importstatements  are\nusually at the beginning of the script.",
+          "start_char": 1482,
+          "end_char": 1558
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "test-new-03",
+    "split": "test",
+    "question": "For a clean circle-drawing function interface, why does radius r belong as a parameter while the number of line segments n is less appropriate?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "fd4391ed95d97e986b6eb9ab",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 55,
+        "text": "One limitation of this solution is thatnis a constant, which means that for very big circles,\nthe line segments are too long, and for small circles, we waste time drawing very small\nsegments.  One solution would be to generalize the function by takingnas a parameter.\nThis would give the user (whoever callscircle) more control, but the interface would be\nless clean.\nTheinterfaceof a function is a summary of how it is used: what are the parameters? What\ndoes the function do?",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 2221,
+          "start_char": 1744,
+          "printed_page": 33,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.7024019537924668,
+        "strategy": "dense",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "e270afe7f4b871d4822c0b0f",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 55,
+        "text": "And what is the return value? An interface is “clean” if it allows the\ncaller to do what they want without dealing with unnecessary details.\nIn this example,rbelongs in the interface because it specifies the circle to be drawn.nis\nless appropriate because it pertains to the details ofhowthe circle should be rendered.\nRather than clutter up the interface, it is better to choose an appropriate value ofndepend-\ning oncircumference:",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 2654,
+          "start_char": 2222,
+          "printed_page": 33,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.6294803994584333,
+        "strategy": "dense",
+        "rank": 2,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "c644a8e921f69c45d5d6671a",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 56,
+        "text": "def  circle(t,  r):\n     circumference  =  2  *  math.pi  *  r\n     n  =  int(circumference  /  3)  +  3\n     length  =  circumference  /  n\n     polygon(t,  n,  length)\nNow the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.\n\n4.7    Refactoring",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 623,
+          "start_char": 127,
+          "printed_page": 34,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.5555545687675516,
+        "strategy": "dense",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[fd4391ed95d97e986b6eb9ab | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 55]\nOne limitation of this solution is thatnis a constant, which means that for very big circles,\nthe line segments are too long, and for small circles, we waste time drawing very small\nsegments.  One solution would be to generalize the function by takingnas a parameter.\nThis would give the user (whoever callscircle) more control, but the interface would be\nless clean.\nTheinterfaceof a function is a summary of how it is used: what are the parameters? What\ndoes the function do?\n\n[e270afe7f4b871d4822c0b0f | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 55]\nAnd what is the return value? An interface is “clean” if it allows the\ncaller to do what they want without dealing with unnecessary details.\nIn this example,rbelongs in the interface because it specifies the circle to be drawn.nis\nless appropriate because it pertains to the details ofhowthe circle should be rendered.\nRather than clutter up the interface, it is better to choose an appropriate value ofndepend-\ning oncircumference:\n\n[c644a8e921f69c45d5d6671a | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 56]\ndef  circle(t,  r):\n     circumference  =  2  *  math.pi  *  r\n     n  =  int(circumference  /  3)  +  3\n     length  =  circumference  /  n\n     polygon(t,  n,  length)\nNow the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.\n\n4.7    Refactoring",
+    "context_ids": [
+      "fd4391ed95d97e986b6eb9ab",
+      "e270afe7f4b871d4822c0b0f",
+      "c644a8e921f69c45d5d6671a"
+    ],
+    "context_chars": 1694,
+    "elapsed_ms": 124.25079999957234,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "For a clean circle-drawing function interface, why does radius r belong as a parameter while the number of line segments n is less appropriate?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    },
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 55,
+          "evidence": "In this example,rbelongs in the interface because it specifies the circle to be drawn.nis\nless appropriate because it pertains to the details ofhowthe circle should be rendered.",
+          "start_char": 2363,
+          "end_char": 2540
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "test-new-04",
+    "split": "test",
+    "question": "If a caller violates a properly documented precondition and a function fails, where does the book locate the bug?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "b05b320dcb5b8ceebf7c6515",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "Preconditions are the responsibility of the caller.   If the caller violates a (properly docu-\nmented!) precondition and the function doesn’t work correctly, the bug is in the caller, not\nthe function.\n\nIf the preconditions are satisfied and the postconditions are not, the bug is in the function.\nIf your pre- and postconditions are clear, they can help with debugging.\n\n4.11    Glossary\n\nmethod:A function that is associated with an object and called using dot notation.",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 1900,
+          "start_char": 1428,
+          "printed_page": 36,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.7465624364279262,
+        "strategy": "dense",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "d4772c627e2dee064eb8ab8a",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "These requirements are calledpreconditionsbecause they are supposed to be true before\nthe function starts executing.  Conversely, conditions at the end of the function arepost-\nconditions.  Postconditions include the intended effect of the function (like drawing line\nsegments) and any side effects (like moving the Turtle or making other changes).",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 1426,
+          "start_char": 1078,
+          "printed_page": 36,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.5691765207543072,
+        "strategy": "dense",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "5debe41951c8ff512dd453ee",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 43,
+        "text": "A function call is like a detour in the flow of execution.  Instead of going to the next state-\nment, the flow jumps to the body of the function, runs the statements there, and then comes\nback to pick up where it left off.",
+        "metadata": {
+          "chapter": 3,
+          "end_char": 1315,
+          "start_char": 1093,
+          "printed_page": 21,
+          "chapter_title": "Functions"
+        },
+        "score": 0.48218852493899766,
+        "strategy": "dense",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[b05b320dcb5b8ceebf7c6515 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 58]\nPreconditions are the responsibility of the caller.   If the caller violates a (properly docu-\nmented!) precondition and the function doesn’t work correctly, the bug is in the caller, not\nthe function.\n\nIf the preconditions are satisfied and the postconditions are not, the bug is in the function.\nIf your pre- and postconditions are clear, they can help with debugging.\n\n4.11    Glossary\n\nmethod:A function that is associated with an object and called using dot notation.\n\n[d4772c627e2dee064eb8ab8a | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 58]\nThese requirements are calledpreconditionsbecause they are supposed to be true before\nthe function starts executing.  Conversely, conditions at the end of the function arepost-\nconditions.  Postconditions include the intended effect of the function (like drawing line\nsegments) and any side effects (like moving the Turtle or making other changes).\n\n[5debe41951c8ff512dd453ee | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 43]\nA function call is like a detour in the flow of execution.  Instead of going to the next state-\nment, the flow jumps to the body of the function, runs the statements there, and then comes\nback to pick up where it left off.",
+    "context_ids": [
+      "b05b320dcb5b8ceebf7c6515",
+      "d4772c627e2dee064eb8ab8a",
+      "5debe41951c8ff512dd453ee"
+    ],
+    "context_chars": 1331,
+    "elapsed_ms": 48.35189999721479,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "If a caller violates a properly documented precondition and a function fails, where does the book locate the bug?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    },
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 58,
+          "evidence": "If the caller violates a (properly docu-\nmented!) precondition and the function doesn’t work correctly, the bug is in the caller, not\nthe function.",
+          "start_char": 1482,
+          "end_char": 1629
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "test-new-05",
+    "split": "test",
+    "question": "In the circle example, what approximate segment length is targeted by n = int(circumference / 3) + 3, and what does adding 3 guarantee?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "c644a8e921f69c45d5d6671a",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 56,
+        "text": "def  circle(t,  r):\n     circumference  =  2  *  math.pi  *  r\n     n  =  int(circumference  /  3)  +  3\n     length  =  circumference  /  n\n     polygon(t,  n,  length)\nNow the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.\n\n4.7    Refactoring",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 623,
+          "start_char": 127,
+          "printed_page": 34,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.6871396080089083,
+        "strategy": "dense",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "1dfb54e73790eaed9078bf62",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 55,
+        "text": "nis the number of line segments in our approximation of a circle, solengthis the length\nof each segment. Thus,polygondraws a 50-sided polygon that approximates a circle with\nradiusr.",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 1742,
+          "start_char": 1560,
+          "printed_page": 33,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.5422052417871221,
+        "strategy": "dense",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "8ee725d461ad8c1006d8959b",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 55,
+        "text": "def  circle(t,  r):\n      circumference  =  2  *  math.pi  *  r\n      n  =  50\n      length  =  circumference  /  n\n      polygon(t,  n,  length)\nThe first line computes the circumference of a circle with radiusrusing the formula 2πr.\nSince  we  usemath.pi,  we  have  to  importmath.   By  convention,importstatements  are\nusually at the beginning of the script.",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 1558,
+          "start_char": 1195,
+          "printed_page": 33,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.502730160788885,
+        "strategy": "dense",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[c644a8e921f69c45d5d6671a | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 56]\ndef  circle(t,  r):\n     circumference  =  2  *  math.pi  *  r\n     n  =  int(circumference  /  3)  +  3\n     length  =  circumference  /  n\n     polygon(t,  n,  length)\nNow the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.\n\n4.7    Refactoring\n\n[1dfb54e73790eaed9078bf62 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 55]\nnis the number of line segments in our approximation of a circle, solengthis the length\nof each segment. Thus,polygondraws a 50-sided polygon that approximates a circle with\nradiusr.\n\n[8ee725d461ad8c1006d8959b | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 55]\ndef  circle(t,  r):\n      circumference  =  2  *  math.pi  *  r\n      n  =  50\n      length  =  circumference  /  n\n      polygon(t,  n,  length)\nThe first line computes the circumference of a circle with radiusrusing the formula 2πr.\nSince  we  usemath.pi,  we  have  to  importmath.   By  convention,importstatements  are\nusually at the beginning of the script.",
+    "context_ids": [
+      "c644a8e921f69c45d5d6671a",
+      "1dfb54e73790eaed9078bf62",
+      "8ee725d461ad8c1006d8959b"
+    ],
+    "context_chars": 1330,
+    "elapsed_ms": 49.41139998845756,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "In the circle example, what approximate segment length is targeted by n = int(circumference / 3) + 3, and what does adding 3 guarantee?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    },
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 56,
+          "evidence": "Now the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.",
+          "start_char": 297,
+          "end_char": 603
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "test-absent-01",
+    "split": "test",
+    "question": "What exact maximum heap size in megabytes does the indexed material prescribe for the Python interpreter?",
+    "answerable": false,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "e90d3f8ff995b006a5683f9c",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 24,
+        "text": "The  Pythoninterpreteris  a  program  that  reads  and  executes  Python  code.   Depending\non your environment, you might start the interpreter by clicking on an icon, or by typing\npythonon a command line. When it starts, you should see output like this:\nPython  3.4.0  (default,  Jun  19  2015,  14:20:21)\n[GCC  4.8.2]  on  linux\nType  \"help\",  \"copyright\",  \"credits\"  or  \"license\"  for  more  information.",
+        "metadata": {
+          "chapter": 1,
+          "end_char": 2179,
+          "start_char": 1769,
+          "printed_page": 2,
+          "chapter_title": "The way of the program"
+        },
+        "score": 0.3650936645157763,
+        "strategy": "dense",
+        "rank": 1
+      },
+      {
+        "id": "14e86617a902442da738094b",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 26,
+        "text": "When you type a large integer, you might be tempted to use commas between groups of\ndigits, as in1,000,000. This is not a legalintegerin Python, but it is legal:\n>>>  1,000,000\n(1,  0,  0)\nThat’s not what we expected at all!  Python interprets1,000,000as a comma-separated\nsequence of integers. We’ll learn more about this kind of sequence later.\n\n1.6    Formal and natural languages",
+        "metadata": {
+          "chapter": 1,
+          "end_char": 1436,
+          "start_char": 1053,
+          "printed_page": 4,
+          "chapter_title": "The way of the program"
+        },
+        "score": 0.33545548704531924,
+        "strategy": "dense",
+        "rank": 2
+      },
+      {
+        "id": "83d377302c81fb1f6327b2ad",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 24,
+        "text": ">>>\nThe first three lines contain information about the interpreter and the operating system it’s\nrunning on, so it might be different for you. But you should check that the version number,\nwhich is3.4.0in this example, begins with 3, which indicates that you are running Python\n3. If it begins with 2, you are running (you guessed it) Python 2.",
+        "metadata": {
+          "chapter": 1,
+          "end_char": 2525,
+          "start_char": 2180,
+          "printed_page": 2,
+          "chapter_title": "The way of the program"
+        },
+        "score": 0.3239777684211731,
+        "strategy": "dense",
+        "rank": 3
+      }
+    ],
+    "context": "[e90d3f8ff995b006a5683f9c | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\nThe  Pythoninterpreteris  a  program  that  reads  and  executes  Python  code.   Depending\non your environment, you might start the interpreter by clicking on an icon, or by typing\npythonon a command line. When it starts, you should see output like this:\nPython  3.4.0  (default,  Jun  19  2015,  14:20:21)\n[GCC  4.8.2]  on  linux\nType  \"help\",  \"copyright\",  \"credits\"  or  \"license\"  for  more  information.\n\n[14e86617a902442da738094b | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 26]\nWhen you type a large integer, you might be tempted to use commas between groups of\ndigits, as in1,000,000. This is not a legalintegerin Python, but it is legal:\n>>>  1,000,000\n(1,  0,  0)\nThat’s not what we expected at all!  Python interprets1,000,000as a comma-separated\nsequence of integers. We’ll learn more about this kind of sequence later.\n\n1.6    Formal and natural languages\n\n[83d377302c81fb1f6327b2ad | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\n>>>\nThe first three lines contain information about the interpreter and the operating system it’s\nrunning on, so it might be different for you. But you should check that the version number,\nwhich is3.4.0in this example, begins with 3, which indicates that you are running Python\n3. If it begins with 2, you are running (you guessed it) Python 2.",
+    "context_ids": [
+      "e90d3f8ff995b006a5683f9c",
+      "14e86617a902442da738094b",
+      "83d377302c81fb1f6327b2ad"
+    ],
+    "context_chars": 1427,
+    "elapsed_ms": 49.80129998875782,
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "What exact maximum heap size in megabytes does the indexed material prescribe for the Python interpreter?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    }
+  },
+  {
+    "query_id": "test-absent-02",
+    "split": "test",
+    "question": "What exact numeric maximum does the indexed material specify for the number of simultaneous Turtle windows?",
+    "answerable": false,
+    "status": "retrieved",
+    "strategy": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "5063aeef3f91503bd11f3180",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 54,
+        "text": "32                                                                                    Chapter 4. Case study: interface design\n4.4    Encapsulation\n\nThe first exercise asks you to put your square-drawing code into a function definition and\nthen call the function, passing the turtle as a parameter. Here is a solution:\ndef  square(t):\n     for  i  in  range(4):\n           t.fd(100)\n           t.lt(90)",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 401,
+          "start_char": 0,
+          "printed_page": 32,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.34113502502441406,
+        "strategy": "dense",
+        "rank": 1
+      },
+      {
+        "id": "f22f914416872af72b31ca55",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 52,
+        "text": "Once you create a Turtle, you can call amethodto move it around the window. A method\nis similar to a function, but it uses slightly different syntax. For example, to move the turtle\nforward:\nbob.fd(100)\nThe method,fd, is associated with the turtle object we’re callingbob.  Calling a method is\nlike making a request: you are askingbobto move forward.\n\nThe argument offdis a distance in pixels, so the actual size depends on your display.",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 807,
+          "start_char": 370,
+          "printed_page": 30,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.3376006484031677,
+        "strategy": "dense",
+        "rank": 2
+      },
+      {
+        "id": "2bc9b1453cc61559102cba7f",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 51,
+        "text": "To check whether you have theturtlemodule, open the Python interpreter and type\n>>>  import  turtle\n>>>  bob  =  turtle.Turtle()\nWhen you run this code, it should create a new window with small arrow that represents\nthe turtle. Close the window.",
+        "metadata": {
+          "chapter": 4,
+          "end_char": 1026,
+          "start_char": 781,
+          "printed_page": 29,
+          "chapter_title": "Case study: interface design"
+        },
+        "score": 0.32658587852632337,
+        "strategy": "dense",
+        "rank": 3
+      }
+    ],
+    "context": "[5063aeef3f91503bd11f3180 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 54]\n32                                                                                    Chapter 4. Case study: interface design\n4.4    Encapsulation\n\nThe first exercise asks you to put your square-drawing code into a function definition and\nthen call the function, passing the turtle as a parameter. Here is a solution:\ndef  square(t):\n     for  i  in  range(4):\n           t.fd(100)\n           t.lt(90)\n\n[f22f914416872af72b31ca55 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 52]\nOnce you create a Turtle, you can call amethodto move it around the window. A method\nis similar to a function, but it uses slightly different syntax. For example, to move the turtle\nforward:\nbob.fd(100)\nThe method,fd, is associated with the turtle object we’re callingbob.  Calling a method is\nlike making a request: you are askingbobto move forward.\n\nThe argument offdis a distance in pixels, so the actual size depends on your display.\n\n[2bc9b1453cc61559102cba7f | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 51]\nTo check whether you have theturtlemodule, open the Python interpreter and type\n>>>  import  turtle\n>>>  bob  =  turtle.Turtle()\nWhen you run this code, it should create a new window with small arrow that represents\nthe turtle. Close the window.",
+    "context_ids": [
+      "5063aeef3f91503bd11f3180",
+      "f22f914416872af72b31ca55",
+      "2bc9b1453cc61559102cba7f"
+    ],
+    "context_chars": 1372,
+    "elapsed_ms": 38.3023000031244,
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null,
+    "agent_answer_evaluated": false,
+    "retrieval_details": {
+      "query": "What exact numeric maximum does the indexed material specify for the number of simultaneous Turtle windows?",
+      "filters": null,
+      "requested_top_k": 3,
+      "returned": 3,
+      "embedding_dimensions": 384
+    }
+  }
+]

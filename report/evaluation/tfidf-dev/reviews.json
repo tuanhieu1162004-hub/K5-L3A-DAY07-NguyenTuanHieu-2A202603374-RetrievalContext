@@ -1,0 +1,304 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 1,
+    "reason": "PDF24 demonstrates interactive code input, but does not ground line-by-line translation into machine code, no compilation, debugging or relative performance. Main explanatory answer is unsupported.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "45c4d9c37356d7623e4b2eb6",
+        "supported": false,
+        "reason": "Prompt example does not establish the claimed interpreter implementation or performance."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF27 supports both ambiguity contrast and redundancy contrast.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "8b450acd31f27b77b9302f2e",
+        "supported": true,
+        "reason": "Direct ambiguity paragraph."
+      },
+      {
+        "id": "064a156c6558e1b0678c1da1",
+        "supported": true,
+        "reason": "Direct redundancy paragraph."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 0,
+    "reason": "Wrong concept: context is input(prompt) on PDF67, not the interpreter prompt that indicates readiness for code.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "d766b62febc4d2b37235e8dd",
+        "supported": false,
+        "reason": "Cited input-function example does not support the statement about interpreter prompt."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF25 explicitly gives exponentiation operator **.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "09829ead7af7fc053d174bf7",
+        "supported": true,
+        "reason": "Direct operator explanation."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF36 directly defines variable as a name referring to a value.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "2cde73c27461559f77e0ede7",
+        "supported": true,
+        "reason": "Exact definition in cited glossary."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 1,
+    "reason": "Semantic refusal despite answered status. Context discusses types and function-name keyword restrictions but does not identify class as a reserved keyword; original question remains unanswered.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "6736797ff94d11b6ea4c8c89",
+        "supported": false,
+        "reason": "Type examples do not establish why class is forbidden or prove a corpus-wide absence."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF33 continuation and PDF46 script example together explain no display and using print. Semantic context sufficient, although the frozen multi-fragment exact-gold metric lacks the first PDF33 fragment.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "30778f61bef932f3ed9263c7",
+        "supported": true,
+        "reason": "PDF33 explicitly gives no display and print solution."
+      },
+      {
+        "id": "89c8cf498ea77756b3aad3de",
+        "supported": true,
+        "reason": "PDF46 supports interactive versus script return-value contrast."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF39 explicitly supports truncation instead of rounding and both examples.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "9d18da86eebbf287b14ae350",
+        "supported": true,
+        "reason": "Exact int behavior and example results."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF48 defines a local variable as usable only inside its function.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "supported": true,
+        "reason": "Direct local-variable definition."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "Adjacent citations jointly establish fruitful returns and void None; context PDF46 also supports using returned values.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "supported": true,
+        "reason": "Contributes fruitful and return-value definitions to the citation group."
+      },
+      {
+        "id": "c68331d5eaad34e17367e9cc",
+        "supported": true,
+        "reason": "Contributes void and None definitions to the citation group."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 0,
+    "reason": "No context states evaluation order before the function call. Glossary value assignment and type example cannot ground the timing assertion.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "supported": false,
+        "reason": "Argument glossary omits evaluation timing."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF57 explains reuse and PDF58 glossary identifies the same process as refactoring.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "73fa8f9282d319c265d1416c",
+        "supported": true,
+        "reason": "Glossary identifies refactoring as improving interfaces and code qualities; context supplies exact reuse wording."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 1,
+    "reason": "Context supports function-use documentation but omits placement at the beginning and class/module generalization.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [
+      {
+        "id": "c37387c05351462db0f300d9",
+        "supported": false,
+        "reason": "PDF58 continuation describes function interface documentation, not placement or classes/modules."
+      }
+    ],
+    "answer_grade": 1
+  },
+  {
+    "query_id": "dev-absent-01",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal without pricing guesses. Corpus audit establishes no PythonAnywhere monthly fee; retrieved book-price exercise is a different topic.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "dev-absent-02",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal without CPU frequency speculation; whole-corpus audit and Turtle setup contain no GHz requirement.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "ebf49e64c1d56e21368ab4b34c4a1d03f3a43dca672273c322d65e31e165a2d1",
+    "citation_reviews": [],
+    "abstention_correct": true
+  }
+]

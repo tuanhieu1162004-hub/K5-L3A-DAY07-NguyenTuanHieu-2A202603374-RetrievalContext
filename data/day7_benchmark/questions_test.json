@@ -1,0 +1,205 @@
+[
+  {
+    "id": "test-new-01",
+    "split": "test",
+    "question": "In the book's PEMDAS explanation, when multiplication and division have equal precedence, in which order are they evaluated?",
+    "answerable": true,
+    "expected_answer": "From left to right. For degrees / 2 * pi, divide by 2 first and then multiply by pi.",
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 34,
+        "evidence": "So in the expressiondegrees / 2 * pi, the division happens first and the result is multiplied bypi."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "So in the expressiondegrees  /  2  *  pi, the division happens first and the\n       result is multiplied bypi.",
+          "start_char": 853,
+          "end_char": 963
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "test-new-02",
+    "split": "test",
+    "question": "Where does the book conventionally place import statements in a Python script?",
+    "answerable": true,
+    "expected_answer": "Usually at the beginning of the script.",
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 55,
+        "evidence": "By convention,importstatements are usually at the beginning of the script."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 55,
+          "evidence": "By  convention,importstatements  are\nusually at the beginning of the script.",
+          "start_char": 1482,
+          "end_char": 1558
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "test-new-03",
+    "split": "test",
+    "question": "For a clean circle-drawing function interface, why does radius r belong as a parameter while the number of line segments n is less appropriate?",
+    "answerable": true,
+    "expected_answer": "r specifies the circle to draw; n describes the implementation detail of how the circle is rendered, which should be chosen internally.",
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 55,
+        "evidence": "In this example,rbelongs in the interface because it specifies the circle to be drawn.nis less appropriate because it pertains to the details ofhowthe circle should be rendered."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 55,
+          "evidence": "In this example,rbelongs in the interface because it specifies the circle to be drawn.nis\nless appropriate because it pertains to the details ofhowthe circle should be rendered.",
+          "start_char": 2363,
+          "end_char": 2540
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "test-new-04",
+    "split": "test",
+    "question": "If a caller violates a properly documented precondition and a function fails, where does the book locate the bug?",
+    "answerable": true,
+    "expected_answer": "In the caller, not in the function.",
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 58,
+        "evidence": "If the caller violates a (properly docu- mented!) precondition and the function doesn’t work correctly, the bug is in the caller, not the function."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 58,
+          "evidence": "If the caller violates a (properly docu-\nmented!) precondition and the function doesn’t work correctly, the bug is in the caller, not\nthe function.",
+          "start_char": 1482,
+          "end_char": 1629
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "test-new-05",
+    "split": "test",
+    "question": "In the circle example, what approximate segment length is targeted by n = int(circumference / 3) + 3, and what does adding 3 guarantee?",
+    "answerable": true,
+    "expected_answer": "Each segment is approximately 3 units long, and the polygon has at least 3 sides.",
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 56,
+        "evidence": "Now the number of segments is an integer nearcircumference/3, so the length of each segment is approximately 3, which is small enough that the circles look good, but big enough to be efficient, and acceptable for any size circle. Adding 3 tonguarantees that the polygon has at least 3 sides."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 56,
+          "evidence": "Now the number of segments is an integer nearcircumference/3, so the length of each\nsegment  is  approximately  3,  which  is  small  enough  that  the  circles  look  good,  but  big\nenough to be efficient, and acceptable for any size circle.\n\nAdding 3 tonguarantees that the polygon has at least 3 sides.",
+          "start_char": 297,
+          "end_char": 603
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "test-absent-01",
+    "split": "test",
+    "question": "What exact maximum heap size in megabytes does the indexed material prescribe for the Python interpreter?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The indexed chapters explain the interpreter, values and recursion but prescribe no heap size in megabytes.",
+    "absence_check": {
+      "relevant_pages": [
+        24,
+        26,
+        65,
+        66,
+        67
+      ],
+      "search_terms": [
+        "heap",
+        "megabyte",
+        "memory limit",
+        "MB"
+      ],
+      "review_note": "Read interpreter and recursion passages and scan all 48 indexed pages. A recursion/stack discussion does not specify a heap size."
+    },
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    }
+  },
+  {
+    "id": "test-absent-02",
+    "split": "test",
+    "question": "What exact numeric maximum does the indexed material specify for the number of simultaneous Turtle windows?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Turtle examples describe creating a window and Turtle objects but do not state a maximum number of simultaneous windows.",
+    "absence_check": {
+      "relevant_pages": [
+        51,
+        52
+      ],
+      "search_terms": [
+        "window",
+        "simultaneous",
+        "maximum",
+        "limit"
+      ],
+      "review_note": "Read Turtle setup/examples and all window-related passages across the 48-page corpus; no simultaneous-window limit is specified."
+    },
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    }
+  }
+]

@@ -1,0 +1,489 @@
+[
+  {
+    "question": "How does the book define a variable?",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "How does the book define a variable?",
+        "query_is_original": true,
+        "filter": null,
+        "results": [
+          {
+            "id": "2cde73c27461559f77e0ede7",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 36,
+            "text": "14                                                                  Chapter 2. Variables, expressions and statements\n2.9    Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram:A graphical representation of a set of variables and the values they refer to.\n\nkeyword:A reserved word that is used to parse a program; you cannot use keywords like\n       if,def, andwhileas variable names.",
+            "metadata": {
+              "chapter": 2,
+              "end_char": 456,
+              "start_char": 0,
+              "printed_page": 14,
+              "chapter_title": "Variables, expressions and statements"
+            },
+            "score": 0.6762972263935535,
+            "strategy": "dense"
+          },
+          {
+            "id": "1b6352ef4f45c016e1de3651",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n2.1    Assignment statements",
+            "metadata": {
+              "chapter": 2,
+              "end_char": 224,
+              "start_char": 0,
+              "printed_page": 9,
+              "chapter_title": "Variables, expressions and statements"
+            },
+            "score": 0.6701457893674625,
+            "strategy": "dense"
+          },
+          {
+            "id": "a2029d4ac1548e1751da0292",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 32,
+            "text": "10                                                                  Chapter 2. Variables, expressions and statements\n\nVariable names can be as long as you like. They can contain both letters and numbers, but\nthey can’t begin with a number. It is legal to use uppercase letters, but it is conventional to\nuse only lower case for variables names.",
+            "metadata": {
+              "chapter": 2,
+              "end_char": 344,
+              "start_char": 0,
+              "printed_page": 10,
+              "chapter_title": "Variables, expressions and statements"
+            },
+            "score": 0.4915958657987367,
+            "strategy": "dense"
+          }
+        ],
+        "retrieval_details": {
+          "query": "How does the book define a variable?",
+          "filters": null,
+          "requested_top_k": 3,
+          "returned": 3,
+          "embedding_dimensions": 384
+        },
+        "context": "[2cde73c27461559f77e0ede7 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 36]\n14                                                                  Chapter 2. Variables, expressions and statements\n2.9    Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram:A graphical representation of a set of variables and the values they refer to.\n\nkeyword:A reserved word that is used to parse a program; you cannot use keywords like\n       if,def, andwhileas variable names.\n\n[1b6352ef4f45c016e1de3651 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 31]\nChapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n2.1    Assignment statements\n\n[a2029d4ac1548e1751da0292 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 32]\n10                                                                  Chapter 2. Variables, expressions and statements\n\nVariable names can be as long as you like. They can contain both letters and numbers, but\nthey can’t begin with a number. It is legal to use uppercase letters, but it is conventional to\nuse only lower case for variables names.",
+        "context_ids": [
+          "2cde73c27461559f77e0ede7",
+          "1b6352ef4f45c016e1de3651",
+          "a2029d4ac1548e1751da0292"
+        ],
+        "elapsed_ms": 63.292100006947294
+      },
+      {
+        "event": "answer",
+        "via": "assistant_content",
+        "citation_source": "answer_markers",
+        "turn": 2
+      }
+    ],
+    "model_calls": [
+      {
+        "turn": 1,
+        "status": "received",
+        "prompt_tokens": 558,
+        "output_tokens": 27,
+        "elapsed_ms": 28353.512300003786,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "Y8ncBXBpqaOGZq9vSEYTkJ9k9KignlM9",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "How does the book define a variable?"
+                }
+              }
+            }
+          ]
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 28320069800
+      },
+      {
+        "turn": 2,
+        "status": "received",
+        "prompt_tokens": 1033,
+        "output_tokens": 57,
+        "elapsed_ms": 25170.029100001557,
+        "message": {
+          "role": "assistant",
+          "content": "A variable is a name that refers to a value [2cde73c27461559f77e0ede7][1b6352ef4f45c016e1de3651]."
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 25128799300
+      }
+    ],
+    "configuration": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b-instruct",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "ollama_version": "0.40.16",
+      "thinking": null,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    },
+    "retrieval_method": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 2,
+    "context_policy": "Latest search results first, then older unique chunks; one cumulative context",
+    "citations": [
+      "2cde73c27461559f77e0ede7",
+      "1b6352ef4f45c016e1de3651"
+    ],
+    "answer": "A variable is a name that refers to a value [2cde73c27461559f77e0ede7][1b6352ef4f45c016e1de3651].",
+    "status": "answered",
+    "service_cost_usd": 0,
+    "raw_model_final": "A variable is a name that refers to a value [2cde73c27461559f77e0ede7][1b6352ef4f45c016e1de3651].",
+    "context": "[2cde73c27461559f77e0ede7 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 36]\n14                                                                  Chapter 2. Variables, expressions and statements\n2.9    Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram:A graphical representation of a set of variables and the values they refer to.\n\nkeyword:A reserved word that is used to parse a program; you cannot use keywords like\n       if,def, andwhileas variable names.\n\n[1b6352ef4f45c016e1de3651 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 31]\nChapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n2.1    Assignment statements\n\n[a2029d4ac1548e1751da0292 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 32]\n10                                                                  Chapter 2. Variables, expressions and statements\n\nVariable names can be as long as you like. They can contain both letters and numbers, but\nthey can’t begin with a number. It is legal to use uppercase letters, but it is conventional to\nuse only lower case for variables names.",
+    "context_ids": [
+      "2cde73c27461559f77e0ede7",
+      "1b6352ef4f45c016e1de3651",
+      "a2029d4ac1548e1751da0292"
+    ],
+    "searches": 1,
+    "elapsed_ms": 53587.39100000821,
+    "prompt_tokens": 1591,
+    "output_tokens": 84,
+    "token_counts_unknown_calls": 0,
+    "query_id": "q05",
+    "split": "dev"
+  },
+  {
+    "question": "Does int round a floating-point value to the nearest integer when converting it?",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Does int round a floating-point value to the nearest integer when converting it?",
+        "query_is_original": true,
+        "filter": null,
+        "results": [
+          {
+            "id": "9d18da86eebbf287b14ae350",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 39,
+            "text": "Theintfunction\ntakes any value and converts it to an integer, if it can, or complains otherwise:\n>>>  int('32')\n32\n>>>  int('Hello')\nValueError:  invalid  literal  for  int():  Hello\nintcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:\n>>>  int(3.99999)\n3\n>>>  int(-2.3)\n-2\nfloatconverts integers and strings to floating-point numbers:\n>>>  float(32)\n32.0\n>>>  float('3.14159')\n3.14159",
+            "metadata": {
+              "chapter": 3,
+              "end_char": 1150,
+              "start_char": 710,
+              "printed_page": 17,
+              "chapter_title": "Functions"
+            },
+            "score": 0.6454670851865906,
+            "strategy": "dense"
+          },
+          {
+            "id": "2b98dde0b6b256da468eacad",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 61,
+            "text": "Thefloor divisionoperator,//, divides two numbers and rounds down to an integer. For\nexample, suppose the run time of a movie is 105 minutes.  You might want to know how\nlong that is in hours. Conventional division returns a floating-point number:\n>>>  minutes  =  105\n>>>  minutes  /  60\n1.75\nBut we don’t normally write hours with decimal points.",
+            "metadata": {
+              "chapter": 5,
+              "end_char": 619,
+              "start_char": 271,
+              "printed_page": 39,
+              "chapter_title": "Conditionals and recursion"
+            },
+            "score": 0.5375181391813589,
+            "strategy": "dense"
+          },
+          {
+            "id": "6e9df293a19d32ab6775442d",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 62,
+            "text": "If you are using Python 2, division works differently.  The division operator,/, performs\nfloor division if both operands are integers, and floating-point division if either operand is\nafloat.\n\n5.2    Boolean expressions",
+            "metadata": {
+              "chapter": 5,
+              "end_char": 529,
+              "start_char": 309,
+              "printed_page": 40,
+              "chapter_title": "Conditionals and recursion"
+            },
+            "score": 0.4560165133466423,
+            "strategy": "dense"
+          }
+        ],
+        "retrieval_details": {
+          "query": "Does int round a floating-point value to the nearest integer when converting it?",
+          "filters": null,
+          "requested_top_k": 3,
+          "returned": 3,
+          "embedding_dimensions": 384
+        },
+        "context": "[9d18da86eebbf287b14ae350 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 39]\nTheintfunction\ntakes any value and converts it to an integer, if it can, or complains otherwise:\n>>>  int('32')\n32\n>>>  int('Hello')\nValueError:  invalid  literal  for  int():  Hello\nintcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:\n>>>  int(3.99999)\n3\n>>>  int(-2.3)\n-2\nfloatconverts integers and strings to floating-point numbers:\n>>>  float(32)\n32.0\n>>>  float('3.14159')\n3.14159\n\n[2b98dde0b6b256da468eacad | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 61]\nThefloor divisionoperator,//, divides two numbers and rounds down to an integer. For\nexample, suppose the run time of a movie is 105 minutes.  You might want to know how\nlong that is in hours. Conventional division returns a floating-point number:\n>>>  minutes  =  105\n>>>  minutes  /  60\n1.75\nBut we don’t normally write hours with decimal points.\n\n[6e9df293a19d32ab6775442d | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 62]\nIf you are using Python 2, division works differently.  The division operator,/, performs\nfloor division if both operands are integers, and floating-point division if either operand is\nafloat.\n\n5.2    Boolean expressions",
+        "context_ids": [
+          "9d18da86eebbf287b14ae350",
+          "2b98dde0b6b256da468eacad",
+          "6e9df293a19d32ab6775442d"
+        ],
+        "elapsed_ms": 52.516199997626245
+      },
+      {
+        "event": "answer",
+        "via": "assistant_content",
+        "citation_source": "answer_markers",
+        "turn": 2
+      }
+    ],
+    "model_calls": [
+      {
+        "turn": 1,
+        "status": "received",
+        "prompt_tokens": 565,
+        "output_tokens": 34,
+        "elapsed_ms": 6560.408600009396,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "jxVMDYQyGpXpxx5Uk3spTwAsbKjH10Ym",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "Does int round a floating-point value to the nearest integer when converting it?"
+                }
+              }
+            }
+          ]
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 6520956500
+      },
+      {
+        "turn": 2,
+        "status": "received",
+        "prompt_tokens": 1130,
+        "output_tokens": 79,
+        "elapsed_ms": 33460.95829999831,
+        "message": {
+          "role": "assistant",
+          "content": "No, the `int` function does not round a floating-point value to the nearest integer; it chops off the fraction part. For example, `int(3.99999)` returns `3` and `int(-2.3)` returns `-2` [9d18da86eebbf287b14ae350]."
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 33434908300
+      }
+    ],
+    "configuration": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b-instruct",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "ollama_version": "0.40.16",
+      "thinking": null,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    },
+    "retrieval_method": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 2,
+    "context_policy": "Latest search results first, then older unique chunks; one cumulative context",
+    "citations": [
+      "9d18da86eebbf287b14ae350"
+    ],
+    "answer": "No, the `int` function does not round a floating-point value to the nearest integer; it chops off the fraction part. For example, `int(3.99999)` returns `3` and `int(-2.3)` returns `-2` [9d18da86eebbf287b14ae350].",
+    "status": "answered",
+    "service_cost_usd": 0,
+    "raw_model_final": "No, the `int` function does not round a floating-point value to the nearest integer; it chops off the fraction part. For example, `int(3.99999)` returns `3` and `int(-2.3)` returns `-2` [9d18da86eebbf287b14ae350].",
+    "context": "[9d18da86eebbf287b14ae350 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 39]\nTheintfunction\ntakes any value and converts it to an integer, if it can, or complains otherwise:\n>>>  int('32')\n32\n>>>  int('Hello')\nValueError:  invalid  literal  for  int():  Hello\nintcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:\n>>>  int(3.99999)\n3\n>>>  int(-2.3)\n-2\nfloatconverts integers and strings to floating-point numbers:\n>>>  float(32)\n32.0\n>>>  float('3.14159')\n3.14159\n\n[2b98dde0b6b256da468eacad | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 61]\nThefloor divisionoperator,//, divides two numbers and rounds down to an integer. For\nexample, suppose the run time of a movie is 105 minutes.  You might want to know how\nlong that is in hours. Conventional division returns a floating-point number:\n>>>  minutes  =  105\n>>>  minutes  /  60\n1.75\nBut we don’t normally write hours with decimal points.\n\n[6e9df293a19d32ab6775442d | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 62]\nIf you are using Python 2, division works differently.  The division operator,/, performs\nfloor division if both operands are integers, and floating-point division if either operand is\nafloat.\n\n5.2    Boolean expressions",
+    "context_ids": [
+      "9d18da86eebbf287b14ae350",
+      "2b98dde0b6b256da468eacad",
+      "6e9df293a19d32ab6775442d"
+    ],
+    "searches": 1,
+    "elapsed_ms": 40074.208699996234,
+    "prompt_tokens": 1695,
+    "output_tokens": 113,
+    "token_counts_unknown_calls": 0,
+    "query_id": "q09",
+    "split": "dev"
+  },
+  {
+    "question": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+        "query_is_original": true,
+        "filter": null,
+        "results": [
+          {
+            "id": "a5fdb6016e57440031dcce76",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 33,
+            "text": "Oth-\nerwise I recommend using PythonAnywhere again. I have posted instructions for running\nin script mode athttp://tinyurl.com/thinkpython2e.\nBecause Python provides both modes, you can test bits of code in interactive mode before\nyou put them in a script.  But there are differences between interactive mode and script\nmode that can be confusing.",
+            "metadata": {
+              "chapter": 2,
+              "end_char": 1292,
+              "start_char": 945,
+              "printed_page": 11,
+              "chapter_title": "Variables, expressions and statements"
+            },
+            "score": 0.34064401145911205,
+            "strategy": "dense"
+          },
+          {
+            "id": "5472054f25fd2f82efbe6ac9",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 24,
+            "text": "To avoid that problem, I recommend that you start out running Python in a browser. Later,\nwhen you are comfortable with Python, I’ll make suggestions for installing Python on your\ncomputer.\n\nThere are a number of web pages you can use to run Python.  If you already have a fa-\nvorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed\ninstructions for getting started athttp://tinyurl.com/thinkpython2e.",
+            "metadata": {
+              "chapter": 1,
+              "end_char": 1470,
+              "start_char": 1039,
+              "printed_page": 2,
+              "chapter_title": "The way of the program"
+            },
+            "score": 0.3299409747123718,
+            "strategy": "dense"
+          },
+          {
+            "id": "1cddd5a9ea6208145c978558",
+            "source_id": "think-python-2e",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 24,
+            "text": "One  of  the  challenges  of  getting  started  with  Python  is  that  you  might  have  to  install\nPython and related software on your computer.  If you are familiar with your operating\nsystem, and especially if you are comfortable with the command-line interface, you will\nhave no trouble installing Python.  But for beginners, it can be painful to learn about sys-\ntem administration and programming at the same time.",
+            "metadata": {
+              "chapter": 1,
+              "end_char": 1037,
+              "start_char": 615,
+              "printed_page": 2,
+              "chapter_title": "The way of the program"
+            },
+            "score": 0.3207966983318329,
+            "strategy": "dense"
+          }
+        ],
+        "retrieval_details": {
+          "query": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+          "filters": null,
+          "requested_top_k": 3,
+          "returned": 3,
+          "embedding_dimensions": 384
+        },
+        "context": "[a5fdb6016e57440031dcce76 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 33]\nOth-\nerwise I recommend using PythonAnywhere again. I have posted instructions for running\nin script mode athttp://tinyurl.com/thinkpython2e.\nBecause Python provides both modes, you can test bits of code in interactive mode before\nyou put them in a script.  But there are differences between interactive mode and script\nmode that can be confusing.\n\n[5472054f25fd2f82efbe6ac9 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\nTo avoid that problem, I recommend that you start out running Python in a browser. Later,\nwhen you are comfortable with Python, I’ll make suggestions for installing Python on your\ncomputer.\n\nThere are a number of web pages you can use to run Python.  If you already have a fa-\nvorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed\ninstructions for getting started athttp://tinyurl.com/thinkpython2e.\n\n[1cddd5a9ea6208145c978558 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\nOne  of  the  challenges  of  getting  started  with  Python  is  that  you  might  have  to  install\nPython and related software on your computer.  If you are familiar with your operating\nsystem, and especially if you are comfortable with the command-line interface, you will\nhave no trouble installing Python.  But for beginners, it can be painful to learn about sys-\ntem administration and programming at the same time.",
+        "context_ids": [
+          "a5fdb6016e57440031dcce76",
+          "5472054f25fd2f82efbe6ac9",
+          "1cddd5a9ea6208145c978558"
+        ],
+        "elapsed_ms": 48.66299999412149
+      },
+      {
+        "event": "abstain",
+        "via": "explicit_model_decision_token",
+        "turn": 2
+      }
+    ],
+    "model_calls": [
+      {
+        "turn": 1,
+        "status": "received",
+        "prompt_tokens": 564,
+        "output_tokens": 33,
+        "elapsed_ms": 7162.591100001009,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "rUtXEDBDVPY6m3k793C8xiO4sipp852R",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "What exact monthly subscription price does the indexed material state for PythonAnywhere?"
+                }
+              }
+            }
+          ]
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 7023230200
+      },
+      {
+        "turn": 2,
+        "status": "received",
+        "prompt_tokens": 1102,
+        "output_tokens": 4,
+        "elapsed_ms": 16563.967099995352,
+        "message": {
+          "role": "assistant",
+          "content": "ABSTAIN"
+        },
+        "thinking_characters": 0,
+        "done_reason": "stop",
+        "total_duration_ns": 16526521700
+      }
+    ],
+    "configuration": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b-instruct",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "ollama_version": "0.40.16",
+      "thinking": null,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    },
+    "retrieval_method": "dense",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 2,
+    "context_policy": "Latest search results first, then older unique chunks; one cumulative context",
+    "citations": [],
+    "answer": "The retrieved passages do not provide enough evidence to answer.",
+    "status": "abstain",
+    "service_cost_usd": 0,
+    "raw_model_final": "ABSTAIN",
+    "context": "[a5fdb6016e57440031dcce76 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 33]\nOth-\nerwise I recommend using PythonAnywhere again. I have posted instructions for running\nin script mode athttp://tinyurl.com/thinkpython2e.\nBecause Python provides both modes, you can test bits of code in interactive mode before\nyou put them in a script.  But there are differences between interactive mode and script\nmode that can be confusing.\n\n[5472054f25fd2f82efbe6ac9 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\nTo avoid that problem, I recommend that you start out running Python in a browser. Later,\nwhen you are comfortable with Python, I’ll make suggestions for installing Python on your\ncomputer.\n\nThere are a number of web pages you can use to run Python.  If you already have a fa-\nvorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed\ninstructions for getting started athttp://tinyurl.com/thinkpython2e.\n\n[1cddd5a9ea6208145c978558 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 24]\nOne  of  the  challenges  of  getting  started  with  Python  is  that  you  might  have  to  install\nPython and related software on your computer.  If you are familiar with your operating\nsystem, and especially if you are comfortable with the command-line interface, you will\nhave no trouble installing Python.  But for beginners, it can be painful to learn about sys-\ntem administration and programming at the same time.",
+    "context_ids": [
+      "a5fdb6016e57440031dcce76",
+      "5472054f25fd2f82efbe6ac9",
+      "1cddd5a9ea6208145c978558"
+    ],
+    "searches": 1,
+    "elapsed_ms": 23775.56180000829,
+    "prompt_tokens": 1666,
+    "output_tokens": 37,
+    "token_counts_unknown_calls": 0,
+    "query_id": "dev-absent-01",
+    "split": "dev"
+  }
+]

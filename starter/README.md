@@ -1,5 +1,20 @@
 # Starter Day 7
 
+**Triển khai bài cá nhân:** chạy thực tế bằng `run_agent.py` + `ollama_agent.py` + `retrievers.py`, thay cho khung ví dụ `agentic.py`. Xem [hướng dẫn tái lập](../docs/REPRODUCE_SUBMISSION.md) và [báo cáo](../report/individual/2A202603374_NguyenTuanHieu.md). Hướng dẫn starter gốc phía dưới được giữ để đối chiếu; TODO trong khung cũ không mô tả trạng thái triển khai mới.
+
+Với dữ liệu Think Python đã có từ lab 6 trong workspace này, làm theo
+[hướng dẫn benchmark và kết quả dev](../docs/BENCHMARK_SETUP.md).
+`prepare_day6.py` chuyển corpus và câu dev; `build_benchmark.py` tạo bộ 24 câu;
+`evaluate_retrieval.py` chấm evidence nhiều chunk, giữ filter và tách câu thiếu
+bằng chứng khỏi mẫu số retrieval. Hỗ trợ `--method tfidf`, `dense` và `hybrid`;
+xem [cách nối pgvector và so sánh ba phương pháp](../docs/RETRIEVAL_SETUP.md).
+Các phần này chưa gọi model chat.
+
+Agent Ollama thật chạy bằng `run_agent.py`; xem
+[hướng dẫn agent cục bộ](../docs/AGENT_SETUP_LOCAL.md). Chương trình này gọi
+model đã cài và retriever thật, lưu từng run riêng cùng trace và mẫu chấm;
+khung `agentic.py` bên dưới vẫn được giữ làm ví dụ ban đầu.
+
 | File | Công dụng |
 |---|---|
 | `agentic.py` | Khung agent ví dụ với số lượt search, top-k và context budget có thể cấu hình |

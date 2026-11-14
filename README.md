@@ -1,4 +1,19 @@
-# Day 7 — Agentic RAG
+# Day 7 — Agentic RAG — Nguyễn Tuấn Hiếu
+
+**K5-L3A · 2A202603374**
+
+Bài cá nhân: [báo cáo chính](report/individual/2A202603374_NguyenTuanHieu.md) · [tái lập trên máy khác](docs/REPRODUCE_SUBMISSION.md) · [quyết định chọn cấu hình trước test](report/selection.json) · [nguồn và quyền sử dụng](ATTRIBUTION.md).
+
+Ba phương pháp thật: TF-IDF, dense pgvector Day6, hybrid RRF. Agent dùng Qwen3 Instruct qua Ollama local, không cần API key. Benchmark24câu dev/test; trace thực nghiệm được chia sẻ trong `artifacts/`, nhãn và lý do trong `report/evaluation/`. Nhãn do Codex (AI) đọc nguồn, không giả nhận là nhãn người học xác nhận. Phần bonus đa phương thức100+trang không được thực hiện.
+
+Các liên kết bên dưới ghi lịch sử triển khai; báo cáo chính và artifact cuối là tài liệu nộp bài.
+
+Tiến độ triển khai trong workspace: [benchmark Think Python, lệnh chạy và kết quả TF-IDF trên dev](docs/BENCHMARK_SETUP.md).
+[Chạy dense trên pgvector Day 6 và hybrid RRF](docs/RETRIEVAL_SETUP.md) · [Kết quả so sánh ba phương pháp trên dev](report/retrieval_dev.md).
+[Bước tiếp: chuẩn bị model chat cục bộ](docs/LOCAL_MODEL_SETUP.md).
+[Nối model với retrieval tool và chạy agent thật](docs/AGENT_SETUP_LOCAL.md).
+[Nhật ký chạy thử agent trên hai câu dev](report/agent_smoke.md).
+[Khắc phục lỗi hết token và so sánh agent trên toàn dev](docs/AGENT_DEV_IMPROVEMENT.md).
 
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 

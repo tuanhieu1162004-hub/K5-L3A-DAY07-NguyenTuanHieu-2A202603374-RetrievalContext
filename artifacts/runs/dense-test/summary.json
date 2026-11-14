@@ -1,0 +1,18 @@
+{
+  "run_id": "20261114_233848_193202",
+  "model": "qwen3:4b-instruct",
+  "method": "dense",
+  "split": "test",
+  "n": 7,
+  "answered": 4,
+  "abstain": 2,
+  "errors": 1,
+  "model_calls": 17,
+  "searches": 7,
+  "prompt_tokens": 16938,
+  "output_tokens": 1151,
+  "token_counts_unknown_calls": 0,
+  "service_cost_usd": 0,
+  "quality_review": "pending; citation ID validation is not semantic support",
+  "run_directory": "C:\\Users\\Admin\\Downloads\\K5-L3-Day07-Retrieval-Context-Engineering-main\\K5-L3-Day07-Retrieval-Context-Engineering-main\\starter\\results\\agent-test-dense-instruct\\20261114_233848_193202"
+}

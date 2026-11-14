@@ -1,0 +1,653 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What does an interpreter do?",
+    "expected_answer": "It reads another program and executes it.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 28,
+        "evidence": "interpreter:A program that reads another program and executes it"
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 24,
+        "evidence": "The Pythoninterpreteris a program that reads and executes Python code."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 28,
+          "evidence": "interpreter:A program that reads another program and executes it",
+          "start_char": 2531,
+          "end_char": 2595
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 24,
+          "evidence": "The  Pythoninterpreteris  a  program  that  reads  and  executes  Python  code.",
+          "start_char": 1769,
+          "end_char": 1848
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "How are formal languages designed to differ from natural languages in ambiguity?",
+    "expected_answer": "Formal languages aim to be nearly or completely unambiguous, giving each statement one meaning regardless of context.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 27,
+        "evidence": "Formal languages are designed to be nearly or completely unambiguous, which means that any statement has exactly one meaning, regardless of context."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 27,
+          "evidence": "Formal languages are designed to be nearly or\n       completely unambiguous, which means that any statement has exactly one meaning,\n       regardless of context.",
+          "start_char": 1643,
+          "end_char": 1805
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "What does the Python interpreter's prompt tell the user?",
+    "expected_answer": "The interpreter is ready for the user to enter code or input.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 24,
+        "evidence": "The last line is apromptthat indicates that the interpreter is ready for you to enter code."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 28,
+        "evidence": "prompt:Characters displayed by the interpreter to indicate that it is ready to take input from the user."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 24,
+          "evidence": "The last line is apromptthat indicates that the interpreter is ready for you to enter code.",
+          "start_char": 2527,
+          "end_char": 2618
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 28,
+          "evidence": "prompt:Characters displayed by the interpreter to indicate that it is ready to take input\n       from the user.",
+          "start_char": 2596,
+          "end_char": 2707
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Which Python operator raises a number to a power?",
+    "expected_answer": "The ** operator performs exponentiation.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 25,
+        "evidence": "Finally, the operator**performs exponentiation; that is, it raises a number to a power:"
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 34,
+        "evidence": "Exponentiation has the next highest precedence, so1  +  2**3is 9, not 27, and2  *\n       3**2is 18, not 36."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 25,
+          "evidence": "Finally, the operator**performs exponentiation; that is, it raises a number to a power:",
+          "start_char": 1482,
+          "end_char": 1569
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "Exponentiation has the next highest precedence, so1  +  2**3is 9, not 27, and2  *\n       3**2is 18, not 36.",
+          "start_char": 501,
+          "end_char": 608
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "How does the book define a variable?",
+    "expected_answer": "A variable is a name that refers to a value.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 31,
+        "evidence": "A variable is a name that refers to a value."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 36,
+        "evidence": "variable:A name that refers to a value."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 31,
+          "evidence": "A variable is a name that refers to a value.",
+          "start_char": 150,
+          "end_char": 194
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 36,
+          "evidence": "variable:A name that refers to a value.",
+          "start_char": 134,
+          "end_char": 173
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Why is class not allowed as a variable name?",
+    "expected_answer": "class is a Python keyword. Keywords identify program structure and cannot be used as variable names.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 32,
+        "evidence": "It turns out thatclassis one of Python’skeywords. The interpreter uses keywords to recognize the structure of the program, and they cannot be used as variable names."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 32,
+          "evidence": "It turns out thatclassis one of Python’skeywords.   The interpreter uses keywords to\nrecognize the structure of the program, and they cannot be used as variable names.",
+          "start_char": 889,
+          "end_char": 1056
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Why does a standalone expression in a Python script not display its result, and how can you display it?",
+    "expected_answer": "In script mode Python evaluates the expression but does not display the result. Use a print statement to display it.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 33,
+        "evidence": "In script mode an expression, all by itself, has no visible effect. Python evaluates the expression, but it doesn’t display the result. To display the result, you need aprintstatement like this:"
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 33,
+          "evidence": "In script\nmode an expression, all by itself, has no visible effect.",
+          "start_char": 1708,
+          "end_char": 1775
+        },
+        {
+          "source_id": "think-python-2e",
+          "page": 33,
+          "evidence": "Python evaluates the expression, but\nit doesn’t display the result. To display the result, you need aprintstatement like this:",
+          "start_char": 1776,
+          "end_char": 1902
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In chapter 2, when one operand of * is a string, what does the operation do and what type must the other operand have?",
+    "expected_answer": "It repeats the string, and the other operand must be an integer.",
+    "filter": {
+      "chapter": 2
+    },
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 34,
+        "evidence": "The*operator also works on strings; it performs repetition. For example,'Spam'*3is 'SpamSpamSpam'. If one of the values is a string, the other has to be an integer."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "The*operator also works on strings;  it performs repetition.   For example,'Spam'*3is\n'SpamSpamSpam'. If one of the values is a string, the other has to be an integer.",
+          "start_char": 1653,
+          "end_char": 1820
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Does int round a floating-point value to the nearest integer when converting it?",
+    "expected_answer": "No. It removes the fractional part rather than rounding to the nearest integer.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 39,
+        "evidence": "intcan convert floating-point values to integers, but it doesn’t round off; it chops off the fraction part:"
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 39,
+          "evidence": "intcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:",
+          "start_char": 893,
+          "end_char": 1000
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Does executing a function definition immediately run the statements inside the function?",
+    "expected_answer": "No. The statements inside run only when the function is called; the definition itself generates no output.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 42,
+        "evidence": "The statements inside the function do not run until the function is called, and the function definition generates no output."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 43,
+        "evidence": "Function definitions do not alter the flow of execution of the program, but remember that\nstatements inside the function don’t run until the function is called."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 42,
+          "evidence": "The statements inside the function do not run until the function is called, and the\nfunction definition generates no output.",
+          "start_char": 1731,
+          "end_char": 1855
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 43,
+          "evidence": "Function definitions do not alter the flow of execution of the program, but remember that\nstatements inside the function don’t run until the function is called.",
+          "start_char": 931,
+          "end_char": 1091
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "In chapter 3, what does it mean for a variable created inside a function to be local?",
+    "expected_answer": "It exists only inside that function.",
+    "filter": {
+      "chapter": 3
+    },
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 44,
+        "evidence": "When you create a variable inside a function, it islocal, which means that it only exists inside the function."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 48,
+        "evidence": "local variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 44,
+          "evidence": "When you create a variable inside a function, it islocal, which means that it only exists\ninside the function.",
+          "start_char": 1139,
+          "end_char": 1249
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "local variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.",
+          "start_char": 576,
+          "end_char": 703
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "What distinguishes a fruitful function from a void function in the book's terminology?",
+    "expected_answer": "A fruitful function returns a result; a void function performs an action without returning a useful value.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 46,
+        "evidence": "Some of the functions we have used, such as the math functions, return results; for lack of a better name, I call themfruitful functions. Other functions, likeprint_twice, perform an action but don’t return a value. They are calledvoid functions."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 48,
+        "evidence": "fruitful function:A function that returns a value.\n\nvoid function:A function that always returnsNone."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 46,
+          "evidence": "Some of the functions we have used, such as the math functions, return results; for lack of\na better name, I call themfruitful functions.  Other functions, likeprint_twice, perform\nan action but don’t return a value. They are calledvoid functions.",
+          "start_char": 567,
+          "end_char": 814
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "fruitful function:A function that returns a value.",
+          "start_char": 846,
+          "end_char": 896
+        },
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "void function:A function that always returnsNone.",
+          "start_char": 898,
+          "end_char": 947
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "When is an expression supplied as a function argument evaluated relative to the function call?",
+    "expected_answer": "The argument expression is evaluated before the function is called.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 44,
+        "evidence": "The argument is evaluated before the function is called"
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 44,
+          "evidence": "The argument is evaluated before the function is called",
+          "start_char": 553,
+          "end_char": 608
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "What is the name of rearranging a program to improve interfaces and make code easier to reuse?",
+    "expected_answer": "Refactoring.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 57,
+        "evidence": "This process—rearranging a program to improve interfaces and facilitate code re-use—is calledrefactoring."
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 58,
+        "evidence": "refactoring:The process of modifying a working program to improve function interfaces\n       and other qualities of the code."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 57,
+          "evidence": "This process—rearranging a program to improve interfaces and facilitate code re-use—is\ncalledrefactoring.",
+          "start_char": 180,
+          "end_char": 285
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 58,
+          "evidence": "refactoring:The process of modifying a working program to improve function interfaces\n       and other qualities of the code.",
+          "start_char": 2459,
+          "end_char": 2584
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Where is a docstring placed, and what does it explain?",
+    "expected_answer": "It is a string at the beginning of a function that explains the function's interface.",
+    "answerable": true,
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    },
+    "original_gold": [
+      {
+        "source_id": "think-python-2e",
+        "page": 57,
+        "evidence": "Adocstringis a string at the beginning of a function that explains the interface"
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 59,
+        "evidence": "docstring:A string that appears at the top of a function definition to document the func-\n       tion’s interface."
+      }
+    ],
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 57,
+          "evidence": "Adocstringis a string at the beginning of a function that explains the interface",
+          "start_char": 1731,
+          "end_char": 1811
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 59,
+          "evidence": "docstring:A string that appears at the top of a function definition to document the func-\n       tion’s interface.",
+          "start_char": 293,
+          "end_char": 407
+        }
+      ]
+    ],
+    "evidence_rule": "Any complete group; every fragment in that group is required."
+  },
+  {
+    "id": "dev-absent-01",
+    "split": "dev",
+    "question": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Indexed chapters recommend PythonAnywhere and describe its Turtle limitation but give no monthly subscription price.",
+    "absence_check": {
+      "relevant_pages": [
+        24,
+        33,
+        51
+      ],
+      "search_terms": [
+        "PythonAnywhere",
+        "monthly",
+        "subscription",
+        "pricing",
+        "price",
+        "dollar",
+        "$"
+      ],
+      "review_note": "Read the PythonAnywhere passages and scan all 48 indexed pages; no amount or subscription plan is stated. Scope is the indexed chapters, not the external website."
+    },
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    }
+  },
+  {
+    "id": "dev-absent-02",
+    "split": "dev",
+    "question": "What minimum CPU clock speed in GHz does the indexed material require for running Turtle programs?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Turtle setup describes installation and opening a window but specifies no CPU frequency requirement.",
+    "absence_check": {
+      "relevant_pages": [
+        51,
+        52
+      ],
+      "search_terms": [
+        "GHz",
+        "MHz",
+        "CPU",
+        "processor",
+        "clock speed"
+      ],
+      "review_note": "Read the Turtle setup and scan all 48 indexed pages for hardware requirements. No numeric CPU frequency is prescribed."
+    },
+    "label_provenance": {
+      "reviewer": "Codex (AI)",
+      "method": "Imported Day 6 dev labels or AI-authored new cases; source-page text and offsets verified by code. Human review remains pending."
+    }
+  }
+]

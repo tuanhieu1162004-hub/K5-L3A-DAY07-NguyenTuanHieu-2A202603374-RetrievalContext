@@ -1,0 +1,79 @@
+{
+  "reviewer": "Codex (AI), source-based offline review; not human certification",
+  "policy": "Answer grade uses all final context: 0 unsupported/wrong, 1 partially grounded, 2 complete. Citation support is strict for the claim attached to a citation or adjacent citation group; each group member must contribute evidence and the group must cover the claim. ID presence alone is insufficient. Context 0 no requested evidence, 1 partial evidence, 2 sufficient evidence and source. Errors remain separate. No labels are sent to the answering agent.",
+  "runs": {
+    "tfidf-test": {
+      "run_id": "20261114_234544_526084",
+      "decisions": {
+        "test-new-01": [2, [true], 2, "PDF34 explicitly gives left-to-right evaluation for operators with equal precedence, including division and multiplication.", ["Cited rule and worked example directly support the answer."]],
+        "test-new-02": [0, [], 0, "False abstention on an answerable corpus question after two searches. Final context discusses scripts, names and versions but lacks the import-placement convention on PDF55; no unsupported answer was invented.", []],
+        "test-new-03": [2, [true], 2, "PDF55 explains radius as desired circle and segment count as rendering implementation detail, chosen internally from circumference. Answer preserves this contrast.", ["Cited interface paragraph contains both roles and the internal choice of n; neighboring paragraph explains segment-size tradeoff."]],
+        "test-new-04": [2, [true], 2, "PDF58 directly locates the bug in caller when documented preconditions are violated.", ["Exact responsibility and condition are in cited paragraph."]],
+        "test-new-05": [2, [true], 2, "PDF56 explicitly states approximate length3 and minimum3 sides, with the exact n formula.", ["Cited paragraph supports both requested quantities."]],
+        "test-absent-01": [null, [], null, "Explicit refusal, no asserted megabyte value. Whole indexed-corpus audit and interpreter/recursion passages contain no prescribed heap size.", []],
+        "test-absent-02": [null, [], null, "Explicit refusal, no guessed maximum. Window setup passages and corpus-wide absence audit contain no simultaneous-window numeric limit.", []]
+      }
+    },
+    "dense-test": {
+      "run_id": "20261114_233848_193202",
+      "error_context_reviews": {
+        "test-new-03": [2, "PDF55 e270 explicitly explains r as the desired circle and n as rendering detail. Context is sufficient; model repeatedly failed single-tool final-decision protocol until the five-call limit."]
+      },
+      "decisions": {
+        "test-new-01": [2, [true], 2, "PDF34 explicitly says equal-precedence operators are evaluated left to right with a division-then-multiplication example.", ["Direct equal-precedence rule, with exponentiation exception irrelevant to this question."]],
+        "test-new-02": [0, [false], 0, "Answer matches outside knowledge/reference, but none of the final chunks gives import placement; the required PDF55 passage is absent.", ["PDF48 import-statement glossary explains reading a module, not where imports are placed."]],
+        "test-new-04": [2, [true], 2, "PDF58 states caller responsibility and locates the bug in caller when a documented precondition is violated.", ["Cited paragraph explicitly includes responsibility and documented-precondition condition."]],
+        "test-new-05": [2, [true], 2, "PDF56 gives approximate segment length3 and at least3 sides from adding3, matching both requested conditions.", ["Both quantities and their meaning are explicit in cited code/explanation."]],
+        "test-absent-01": [null, [], null, "Explicit refusal with no invented heap size. Corpus-wide absence audit and interpreter/recursion passages do not prescribe megabytes.", []],
+        "test-absent-02": [null, [], null, "Explicit refusal with no invented window limit. Turtle setup describes a window, not a maximum simultaneous-window count; full-corpus audit confirms scope.", []]
+      }
+    },
+    "tfidf-dev": {
+      "run_id": "20261114_232115_798650",
+      "semantic_refusals_despite_answered": ["q06"],
+      "error_context_reviews": {
+        "q08": [0, "Retrieved glossary/semantic-error passages do not explain string repetition or the integer requirement."],
+        "q10": [2, "PDF42 explicitly says the function body runs only when called; sufficient evidence was available despite final protocol failure."]
+      },
+      "decisions": {
+        "q01": [0, [false], 1, "PDF24 demonstrates interactive code input, but does not ground line-by-line translation into machine code, no compilation, debugging or relative performance. Main explanatory answer is unsupported.", ["Prompt example does not establish the claimed interpreter implementation or performance."]],
+        "q02": [2, [true, true], 2, "PDF27 supports both ambiguity contrast and redundancy contrast.", ["Direct ambiguity paragraph.", "Direct redundancy paragraph."]],
+        "q03": [0, [false], 0, "Wrong concept: context is input(prompt) on PDF67, not the interpreter prompt that indicates readiness for code.", ["Cited input-function example does not support the statement about interpreter prompt."]],
+        "q04": [2, [true], 2, "PDF25 explicitly gives exponentiation operator **.", ["Direct operator explanation."]],
+        "q05": [2, [true], 2, "PDF36 directly defines variable as a name referring to a value.", ["Exact definition in cited glossary."]],
+        "q06": [0, [false], 1, "Semantic refusal despite answered status. Context discusses types and function-name keyword restrictions but does not identify class as a reserved keyword; original question remains unanswered.", ["Type examples do not establish why class is forbidden or prove a corpus-wide absence."]],
+        "q07": [2, [true, true], 2, "PDF33 continuation and PDF46 script example together explain no display and using print. Semantic context sufficient, although the frozen multi-fragment exact-gold metric lacks the first PDF33 fragment.", ["PDF33 explicitly gives no display and print solution.", "PDF46 supports interactive versus script return-value contrast."]],
+        "q09": [2, [true], 2, "PDF39 explicitly supports truncation instead of rounding and both examples.", ["Exact int behavior and example results."]],
+        "q11": [2, [true], 2, "PDF48 defines a local variable as usable only inside its function.", ["Direct local-variable definition."]],
+        "q12": [2, [true, true], 2, "Adjacent citations jointly establish fruitful returns and void None; context PDF46 also supports using returned values.", ["Contributes fruitful and return-value definitions to the citation group.", "Contributes void and None definitions to the citation group."]],
+        "q13": [0, [false], 0, "No context states evaluation order before the function call. Glossary value assignment and type example cannot ground the timing assertion.", ["Argument glossary omits evaluation timing."]],
+        "q14": [2, [true], 2, "PDF57 explains reuse and PDF58 glossary identifies the same process as refactoring.", ["Glossary identifies refactoring as improving interfaces and code qualities; context supplies exact reuse wording."]],
+        "q15": [1, [false], 1, "Context supports function-use documentation but omits placement at the beginning and class/module generalization.", ["PDF58 continuation describes function interface documentation, not placement or classes/modules."]],
+        "dev-absent-01": [null, [], null, "Explicit refusal without pricing guesses. Corpus audit establishes no PythonAnywhere monthly fee; retrieved book-price exercise is a different topic.", []],
+        "dev-absent-02": [null, [], null, "Explicit refusal without CPU frequency speculation; whole-corpus audit and Turtle setup contain no GHz requirement.", []]
+      }
+    },
+    "dense-dev": {
+      "run_id": "20261114_225910_368066",
+      "decisions": {
+        "q01": [1, [true, false], 2, "Definition is supported on PDF28. PDF36 supports interactive/script modes, but not the added line-by-line and immediate-feedback claim.", ["PDF28 directly defines interpreter.", "PDF36 mode definitions do not establish all added execution claims."]],
+        "q02": [2, [true, true], 2, "PDF27 explicitly supports unambiguous formal language and redundancy contrast.", ["Ambiguity paragraph supports the first claim.", "Redundancy paragraph supports the second claim."]],
+        "q03": [2, [true], 2, "PDF28 defines prompt as readiness for input and interpreter as reading/executing programs; PDF24 also explicitly explains entering code.", ["Prompt and interpreter definitions jointly support the answer."]],
+        "q04": [2, [true], 2, "PDF25 explicitly identifies ** as exponentiation.", ["Operator and meaning appear together in cited chunk."]],
+        "q05": [2, [true, true], 2, "Both PDF36 glossary and PDF31 introduction define variable as a name referring to a value.", ["Direct definition on PDF36.", "Direct definition on PDF31."]],
+        "q06": [2, [true], 2, "PDF32 names class as a reserved keyword used for program structure, not a variable name.", ["Cited paragraph supplies both keyword status and restriction."]],
+        "q07": [2, [true], 2, "Both required fragments from PDF33 are in final context; cited continuation explains evaluate-without-display and print with matching example.", ["Cited paragraph supplies evaluation, display restriction and print example; preceding context establishes script mode."]],
+        "q08": [2, [true], 2, "PDF34 supports string repetition and integer requirement.", ["Both required conditions are explicit in cited chunk."]],
+        "q09": [2, [true], 2, "PDF39 explicitly says no rounding, chops fraction, and contains both examples.", ["Definition and examples match cited text."]],
+        "q10": [2, [true], 2, "PDF43 says statements do not run until called; this answers the question about defining versus calling.", ["Cited flow-of-execution paragraph explicitly supports the claim."]],
+        "q11": [2, [true], 2, "PDF44 explicitly says local means exists only inside the function.", ["Local-variable paragraph supports scope restriction."]],
+        "q12": [2, [false], 2, "Final context supports fruitful-return and void-None distinction, but the one citation only defines fruitful functions, not void functions. Correct contextual answer with incomplete citation attachment.", ["dd1bf chunk lacks void/None definition; that is in other available chunks c683 and cfe91."]],
+        "q13": [0, [false], 0, "No final-context passage establishes evaluation before calling. PDF48 argument definition and PDF41 composition example cannot ground the timing claim; required PDF44 passage is absent.", ["Cited glossary describes value-to-parameter assignment, not evaluation order."]],
+        "q14": [2, [true], 2, "PDF57 explicitly names refactoring and the same purpose.", ["Cited passage directly contains the requested definition."]],
+        "q15": [1, [false, true], 2, "Function placement and triple quoting are supported, but extending the definition to classes/modules is not supported by final context.", ["PDF57 describes functions only, not classes/modules.", "PDF57 continuation explicitly supports triple-quote convention."]],
+        "dev-absent-01": [null, [], null, "Explicit refusal with no price or speculation. Corpus audit finds PythonAnywhere recommendations but no subscription price.", []],
+        "dev-absent-02": [null, [], null, "Explicit refusal with no GHz claim. Setup passages and full-corpus absence audit contain no CPU clock requirement.", []]
+      }
+    }
+  }
+}

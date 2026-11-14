@@ -1,0 +1,24 @@
+{
+  "agents": {
+    "tfidf-dev": "starter/results/agent-dev-tfidf-instruct/20261114_232115_798650",
+    "dense-dev": "starter/results/agent-dev-dense-instruct/20261114_225910_368066",
+    "tfidf-test": "starter/results/agent-test-tfidf-instruct/20261114_234544_526084",
+    "dense-test": "starter/results/agent-test-dense-instruct/20261114_233848_193202",
+    "dense-thinking-dev": "starter/results/agent-dev-dense/20261114_201554_120565",
+    "smoke-thinking-190845": "starter/results/agent-smoke-dense/20261114_190845_020130",
+    "smoke-thinking-192133": "starter/results/agent-smoke-dense/20261114_192133_580474",
+    "smoke-thinking-193415": "starter/results/agent-smoke-dense/20261114_193415_367280",
+    "smoke-thinking-194624": "starter/results/agent-smoke-dense/20261114_194624_573936",
+    "smoke-thinking-200221": "starter/results/agent-smoke-dense/20261114_200221_258280",
+    "instruct-pilot": "starter/results/agent-dev-instruct-pilot/20261114_225602_875515"
+  },
+  "retrieval": [
+    "dev-tfidf-k3-b800",
+    "dev-tfidf-k3-b2000",
+    "dev-tfidf-k8-b4000",
+    "dev-dense-k3-b2000",
+    "dev-hybrid-k3-b2000",
+    "test-tfidf-k3-b2000",
+    "test-dense-k3-b2000"
+  ]
+}

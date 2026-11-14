@@ -1,0 +1,319 @@
+[
+  {
+    "query_id": "q01",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 28,
+        "exact_chunk_ids": [
+          "588a2586f952d92e2134a52f"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "588a2586f952d92e2134a52f"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 24,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "e90d3f8ff995b006a5683f9c"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q02",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 27,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "8b450acd31f27b77b9302f2e"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q03",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 24,
+        "exact_chunk_ids": [
+          "45c4d9c37356d7623e4b2eb6"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "45c4d9c37356d7623e4b2eb6"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 28,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "588a2586f952d92e2134a52f"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q04",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 25,
+        "exact_chunk_ids": [
+          "09829ead7af7fc053d174bf7"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "09829ead7af7fc053d174bf7"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 34,
+        "exact_chunk_ids": [
+          "1f5d8b38cae37ddef4eb06a6"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "1f5d8b38cae37ddef4eb06a6"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": true
+  },
+  {
+    "query_id": "q05",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 31,
+        "exact_chunk_ids": [
+          "1b6352ef4f45c016e1de3651"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "1b6352ef4f45c016e1de3651"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 36,
+        "exact_chunk_ids": [
+          "2cde73c27461559f77e0ede7"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "2cde73c27461559f77e0ede7"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": true
+  },
+  {
+    "query_id": "q06",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 32,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "4b016dd00049b7575d402120"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q07",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 33,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": []
+      }
+    ],
+    "has_single_chunk_evidence": false,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q08",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 34,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "dfd307858f548598142b0ab2"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q09",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 39,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "9d18da86eebbf287b14ae350"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q10",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 42,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "8c83724f1c5f2e994b19c850"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 43,
+        "exact_chunk_ids": [
+          "396ee1406052125e0fad32af"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "396ee1406052125e0fad32af"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q11",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 44,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "29439b00e0581d30f1842a9b"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 48,
+        "exact_chunk_ids": [
+          "dd1bf77ddb19877772dc93ab"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "dd1bf77ddb19877772dc93ab"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q12",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 46,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "ddcb63443adf410840f87c78"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 48,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": []
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q13",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 44,
+        "exact_chunk_ids": [
+          "8f1959314745098d21a658fc"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "8f1959314745098d21a658fc"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": true
+  },
+  {
+    "query_id": "q14",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 57,
+        "exact_chunk_ids": [],
+        "whitespace_folded_chunk_ids": [
+          "3bd0782d554b96a9c34d13c0"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 58,
+        "exact_chunk_ids": [
+          "73fa8f9282d319c265d1416c"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "73fa8f9282d319c265d1416c"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": false
+  },
+  {
+    "query_id": "q15",
+    "evidence_checks": [
+      {
+        "source_id": "think-python-2e",
+        "page": 57,
+        "exact_chunk_ids": [
+          "2ed8e23bdbcbb3742799992f"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "2ed8e23bdbcbb3742799992f"
+        ]
+      },
+      {
+        "source_id": "think-python-2e",
+        "page": 59,
+        "exact_chunk_ids": [
+          "54d631b4b196787fdc312528"
+        ],
+        "whitespace_folded_chunk_ids": [
+          "54d631b4b196787fdc312528"
+        ]
+      }
+    ],
+    "has_single_chunk_evidence": true,
+    "starter_literal_validation_passes": true
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "selected_at": "2026-11-14T23:38:27.711126+07:00",
+  "selection_basis": "Full dev offline source review by Codex AI, not human certification. Prioritize grounded answer and citation support, then evidence, latency and cost.",
+  "baseline": "tfidf",
+  "selected": "dense",
+  "reason": "Dense grounded mean 1.733/2 vs TF-IDF 1.308/2, citation 15/19 vs 11/16, technical errors 0/17 vs 2/17. Both abstain on 2 negatives. Dense exact context evidence14/15 vs8/15. Hybrid retrieval13/15 trails dense14/15 at same budget, so not promoted.",
+  "dev_runs": {
+    "tfidf": "20261114_232115_798650",
+    "dense": "20261114_225910_368066"
+  },
+  "shared": {
+    "model": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b-instruct",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "ollama_version": "0.40.16",
+      "thinking": null,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    },
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 2,
+    "chunks_sha256": "62f935e650eb7319731971cedc9fbd0c89b7a78360badff4a164e0cacd2732b0"
+  },
+  "agent_code_sha256": "717c6318e877afcad8fe01f5f6b5c1e0d4c3afb2dcbe58e8e40e96701915571a",
+  "code_sha256": {
+    "run_agent.py": "ca34100b877f52df9fea230a354a4715487ef2df6cf662cd8ee21b090f44411e",
+    "ollama_agent.py": "717c6318e877afcad8fe01f5f6b5c1e0d4c3afb2dcbe58e8e40e96701915571a",
+    "retrievers.py": "0d59d29020ec3917d61bc1fa7433111872920a109b94c2b7b2eee84cbc55c8ed",
+    "baseline.py": "03b8b16c42be7d19c820e506f4cea2a7496c462a00c77d1cfc9e7fc972301fdf",
+    "check_ollama.py": "ebf518a91737aa5eb877a34ef46548cca82b8851583a80c8a3ca2d219001693f"
+  },
+  "test_policy": "Run both frozen configurations once on the same 7 fresh test cases. Preserve errors and all answers. Do not adjust prompts, model, retrieval, labels or budget using test. Grade 5 answerable contexts/answers/citations and2 unanswerable cases for each.",
+  "scope": "Basic lab; optional multimodal bonus not attempted"
+}

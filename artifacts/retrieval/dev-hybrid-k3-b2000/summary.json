@@ -1,0 +1,64 @@
+{
+  "strategy": "hybrid",
+  "n_total": 17,
+  "n_answerable": 15,
+  "n_unanswerable": 2,
+  "top_k": 3,
+  "budget_chars": 2000,
+  "metrics": {
+    "Hit@1": {
+      "n": 10,
+      "N": 15,
+      "rate": 0.6666666666666666
+    },
+    "Evidence Hit@3": {
+      "n": 13,
+      "N": 15,
+      "rate": 0.8666666666666667
+    },
+    "Context Evidence Rate": {
+      "n": 13,
+      "N": 15,
+      "rate": 0.8666666666666667
+    }
+  },
+  "median_ms": 15.198799999780022,
+  "avg_context_chars": 1468.0588235294117,
+  "service_cost_usd": 0,
+  "agent_answer_evaluated": false,
+  "note": "Unanswerable cases have retrieval traces but are excluded from evidence metrics. Abstention requires a real agent and separate reviews.",
+  "split": "dev",
+  "index_seconds": 5.300061799993273,
+  "configuration": {
+    "method": "Dense + TF-IDF reciprocal rank fusion",
+    "candidate_k_per_method": 20,
+    "rank_constant": 60,
+    "dense": {
+      "method": "Exact pgvector cosine",
+      "day6_strategy": "C",
+      "corpus_chunks_verified": 271,
+      "embedding": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimensions": 384,
+        "normalize_embeddings": true
+      },
+      "device": "cpu",
+      "local_weights_only": true,
+      "document_vector_check_samples": 3,
+      "document_vector_max_abs_difference": 5.963770484916642e-08,
+      "document_vector_check_tolerance": 0.0001,
+      "database_read_only": true,
+      "database_snapshot": "repeatable read",
+      "query_embedding_cache": false,
+      "filter_policy": "Supplied metadata filters applied in SQL before top-k"
+    },
+    "lexical": {
+      "method": "TF-IDF cosine",
+      "idf_corpus_chunks": 271,
+      "filter_policy": "Supplied metadata filters applied before top-k"
+    }
+  },
+  "chunks_sha256": "62f935e650eb7319731971cedc9fbd0c89b7a78360badff4a164e0cacd2732b0",
+  "questions_sha256": "d82b34eb965ec04d3fa3075d448a8ca9978d087ebd2386a218ba682f899beaec"
+}

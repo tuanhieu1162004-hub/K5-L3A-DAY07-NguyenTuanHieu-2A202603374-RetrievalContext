@@ -1,0 +1,28 @@
+{
+  "day6_repository": "C:\\Users\\Admin\\Downloads\\K5-L3-Day06-DataIngestionEngineering-main\\K5-L3-Day06-DataIngestionEngineering-main",
+  "chunk_export": "C:\\Users\\Admin\\Downloads\\K5-L3-Day06-DataIngestionEngineering-main\\K5-L3-Day06-DataIngestionEngineering-main\\starter\\results\\chunks_C.jsonl",
+  "strategy": "C",
+  "chunk_count": 271,
+  "dev_answerable_count": 15,
+  "document": {
+    "title": "Think Python: How to Think Like a Computer Scientist",
+    "author": "Allen B. Downey",
+    "source_path_or_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+    "license_or_permission": "CC BY-NC 3.0 Unported; attribution and noncommercial use required; see PDF copyright page",
+    "sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+    "verified_content_page_count": 48
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimensions": 384,
+    "normalize_embeddings": true
+  },
+  "vector_store": {
+    "backend": "PostgreSQL/pgvector",
+    "table": "day6_chunks",
+    "strategy": "C"
+  },
+  "benchmark_note": "Dev questions are DRAFTS: see benchmark_import_audit.json before evaluation. Preserve all original golds; adapt whitespace matching and multi-chunk evidence explicitly. Add dev abstention cases and create a new Day 7 test split.",
+  "filter_note": "TF-IDF starter ignores filters; keep filter handling equivalent across methods or report the difference explicitly."
+}

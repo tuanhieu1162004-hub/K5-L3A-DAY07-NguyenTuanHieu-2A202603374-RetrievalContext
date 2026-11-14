@@ -1,0 +1,1571 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "What does an interpreter do?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "5109861fb586dcfa1620c979",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 35,
+        "text": "If  there  is  a  semantic  error  in  your  program,  it  will  run  without  generating  error\n       messages, but it will not do the right thing.  It will do something else.  Specifically, it\n       will do what you told it to do.\n       Identifying semantic errors can be tricky because it requires you to work backward\n       by looking at the output of the program and trying to figure out what it is doing.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 13,
+          "start_char": 2569,
+          "end_char": 2983
+        },
+        "score": 0.23110381178356543,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "c37387c05351462db0f300d9",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "36                                                                                    Chapter 4. Case study: interface design\n\nIt is terse, but it contains the essential information someone would need to use this func-\ntion.  It explains concisely what the function does (without getting into the details of how\nit does it).  It explains what effect each parameter has on the behavior of the function and\nwhat type each parameter should be (if it is not obvious).",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 0,
+          "end_char": 463
+        },
+        "score": 0.21248843170922965,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "45c4d9c37356d7623e4b2eb6",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 24,
+        "text": "The last line is apromptthat indicates that the interpreter is ready for you to enter code. If\nyou type a line of code and hit Enter, the interpreter displays the result:\n>>>  1  +  1\n2\nNow you’re ready to get started.  From here on, I assume that you know how to start the\nPython interpreter and run code.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 2,
+          "start_char": 2527,
+          "end_char": 2833
+        },
+        "score": 0.19105782821780054,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[5109861fb586dcfa1620c979 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 35]\nIf  there  is  a  semantic  error  in  your  program,  it  will  run  without  generating  error\n       messages, but it will not do the right thing.  It will do something else.  Specifically, it\n       will do what you told it to do.\n       Identifying semantic errors can be tricky because it requires you to work backward\n       by looking at the output of the program and trying to figure out what it is doing.",
+    "context_ids": [
+      "5109861fb586dcfa1620c979"
+    ],
+    "context_chars": 509,
+    "elapsed_ms": 0.31200000375974923,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 28,
+          "evidence": "interpreter:A program that reads another program and executes it",
+          "start_char": 2531,
+          "end_char": 2595
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 24,
+          "evidence": "The  Pythoninterpreteris  a  program  that  reads  and  executes  Python  code.",
+          "start_char": 1769,
+          "end_char": 1848
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "question": "How are formal languages designed to differ from natural languages in ambiguity?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "8b450acd31f27b77b9302f2e",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 27,
+        "text": "ambiguity:Natural languages are full of ambiguity, which people deal with by using con-\n       textual clues and other information.  Formal languages are designed to be nearly or\n       completely unambiguous, which means that any statement has exactly one meaning,\n       regardless of context.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 5,
+          "start_char": 1510,
+          "end_char": 1805
+        },
+        "score": 0.46942848465085363,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "399ecac7135bf11c1c774577",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 26,
+        "text": "Formal languagesare languages that are designed by people for specific applications. For\nexample,  the  notation  that  mathematicians  use  is  a  formal language  that  is  particularly\ngood at denoting relationships among numbers and symbols.  Chemists use a formal lan-\nguage to represent the chemical structure of molecules. And most importantly:\n\n       Programming  languages  are  formal  languages  that  have  been  designed  to\n       express computations.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 4,
+          "start_char": 1635,
+          "end_char": 2102
+        },
+        "score": 0.41669805462993287,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "064a156c6558e1b0678c1da1",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 27,
+        "text": "redundancy:In order to make up for ambiguity and reduce misunderstandings, natural\n       languages employ lots of redundancy.  As a result, they are often verbose.  Formal\n       languages are less redundant and more concise.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 5,
+          "start_char": 1807,
+          "end_char": 2033
+        },
+        "score": 0.38806228424475386,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[8b450acd31f27b77b9302f2e | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 27]\nambiguity:Natural languages are full of ambiguity, which people deal with by using con-\n       textual clues and other information.  Formal languages are designed to be nearly or\n       completely unambiguous, which means that any statement has exactly one meaning,\n       regardless of context.\n\n[064a156c6558e1b0678c1da1 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 27]\nredundancy:In order to make up for ambiguity and reduce misunderstandings, natural\n       languages employ lots of redundancy.  As a result, they are often verbose.  Formal\n       languages are less redundant and more concise.",
+    "context_ids": [
+      "8b450acd31f27b77b9302f2e",
+      "064a156c6558e1b0678c1da1"
+    ],
+    "context_chars": 713,
+    "elapsed_ms": 0.4112999886274338,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 27,
+          "evidence": "Formal languages are designed to be nearly or\n       completely unambiguous, which means that any statement has exactly one meaning,\n       regardless of context.",
+          "start_char": 1643,
+          "end_char": 1805
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "question": "What does the Python interpreter's prompt tell the user?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "9fdf55826322be97578e5b57",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 67,
+        "text": "That’s why the user’s input appears below the prompt.\nIf you expect the user to type an integer, you can try to convert the return value toint:\n>>>  prompt  ='What...is  the  airspeed  velocity  of  an  unladen  swallow?\\n'\n>>>  speed  =  input(prompt)\nWhat...is  the  airspeed  velocity  of  an  unladen  swallow?\n42\n>>>  int(speed)\n42",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 45,
+          "start_char": 1922,
+          "end_char": 2258
+        },
+        "score": 0.3631416387697692,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "d766b62febc4d2b37235e8dd",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 67,
+        "text": ">>>  text\n'What  are  you  waiting  for?'\nBefore getting input from the user, it is a good idea to print a prompt telling the user what\nto type.inputcan take a prompt as an argument:\n>>>  name  =  input('What...is  your  name?\\n')\nWhat...is  your  name?\nArthur,  King  of  the  Britons!\n>>>  name\n'Arthur,  King  of  the  Britons!'\nThe sequence\\nat the end of the prompt represents anewline, which is a special character\nthat causes a line break.",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 45,
+          "start_char": 1475,
+          "end_char": 1921
+        },
+        "score": 0.3125333037061045,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "a1086c6d897fef1635c9db93",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 67,
+        "text": "The programs we have written so far accept no input from the user. They just do the same\nthing every time.\nPython provides a built-in function calledinputthat stops the program and waits for the\nuser to type something.  When the user pressesReturnorEnter, the program resumes and\ninputreturns what the user typed as a string.   In Python 2,  the same function is called\nraw_input.\n>>>  text  =  input()\nWhat  are  you  waiting  for?",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 45,
+          "start_char": 1042,
+          "end_char": 1474
+        },
+        "score": 0.30364546595987674,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[9fdf55826322be97578e5b57 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 67]\nThat’s why the user’s input appears below the prompt.\nIf you expect the user to type an integer, you can try to convert the return value toint:\n>>>  prompt  ='What...is  the  airspeed  velocity  of  an  unladen  swallow?\\n'\n>>>  speed  =  input(prompt)\nWhat...is  the  airspeed  velocity  of  an  unladen  swallow?\n42\n>>>  int(speed)\n42",
+    "context_ids": [
+      "9fdf55826322be97578e5b57"
+    ],
+    "context_chars": 431,
+    "elapsed_ms": 0.39909999759402126,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 24,
+          "evidence": "The last line is apromptthat indicates that the interpreter is ready for you to enter code.",
+          "start_char": 2527,
+          "end_char": 2618
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 28,
+          "evidence": "prompt:Characters displayed by the interpreter to indicate that it is ready to take input\n       from the user.",
+          "start_char": 2596,
+          "end_char": 2707
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "Which Python operator raises a number to a power?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "09829ead7af7fc053d174bf7",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 25,
+        "text": "Finally, the operator**performs exponentiation; that is, it raises a number to a power:\n>>>  6**2  +  6\n42\nIn some other languages,^is used for exponentiation, but in Python it is a bitwise operator\ncalled XOR. If you are not familiar with bitwise operators, the result will surprise you:\n>>>  6  ^  2\n4\nI won’t cover bitwise operators in this book, but you can read about them athttp://wiki.\npython.org/moin/BitwiseOperators.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 3,
+          "start_char": 1482,
+          "end_char": 1908
+        },
+        "score": 0.3224996822315883,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "e67eddfbe6ef630c2cf88b95",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "For example,polylinerequires four arguments:thas to be a Turtle;nhas to be an integer;\nlengthshould be a positive number; andanglehas to be a number, which is understood\nto be in degrees.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 889,
+          "end_char": 1076
+        },
+        "score": 0.17375300061804172,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "b682991e2f0b4f761994b81f",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 69,
+        "text": "5.13. Glossary                                                                                                                                  47\n5.13    Glossary\n\nfloor division:An operator, denoted//, that divides two numbers and rounds down (to-\n       ward negative infinity) to an integer.\n\nmodulus operator:An operator, denoted with a percent sign (%), that works on integers\n       and returns the remainder when one number is divided by another.",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 47,
+          "start_char": 0,
+          "end_char": 454
+        },
+        "score": 0.17099557750673847,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[09829ead7af7fc053d174bf7 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 25]\nFinally, the operator**performs exponentiation; that is, it raises a number to a power:\n>>>  6**2  +  6\n42\nIn some other languages,^is used for exponentiation, but in Python it is a bitwise operator\ncalled XOR. If you are not familiar with bitwise operators, the result will surprise you:\n>>>  6  ^  2\n4\nI won’t cover bitwise operators in this book, but you can read about them athttp://wiki.\npython.org/moin/BitwiseOperators.",
+    "context_ids": [
+      "09829ead7af7fc053d174bf7"
+    ],
+    "context_chars": 521,
+    "elapsed_ms": 0.3559000033419579,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 25,
+          "evidence": "Finally, the operator**performs exponentiation; that is, it raises a number to a power:",
+          "start_char": 1482,
+          "end_char": 1569
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "Exponentiation has the next highest precedence, so1  +  2**3is 9, not 27, and2  *\n       3**2is 18, not 36.",
+          "start_char": 501,
+          "end_char": 608
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "How does the book define a variable?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "f87e205a74ed0628a0b5250b",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 39,
+        "text": "Chapter 3\n\nFunctions\n\nIn the context of programming, afunctionis a named sequence of statements that performs\na computation.  When you define a function, you specify the name and the sequence of\nstatements. Later, you can “call” the function by name.\n\n3.1    Function calls",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 17,
+          "start_char": 0,
+          "end_char": 273
+        },
+        "score": 0.16774926024952816,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "2cde73c27461559f77e0ede7",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 36,
+        "text": "14                                                                  Chapter 2. Variables, expressions and statements\n2.9    Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram:A graphical representation of a set of variables and the values they refer to.\n\nkeyword:A reserved word that is used to parse a program; you cannot use keywords like\n       if,def, andwhileas variable names.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 14,
+          "start_char": 0,
+          "end_char": 456
+        },
+        "score": 0.15759013302408803,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "c37387c05351462db0f300d9",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "36                                                                                    Chapter 4. Case study: interface design\n\nIt is terse, but it contains the essential information someone would need to use this func-\ntion.  It explains concisely what the function does (without getting into the details of how\nit does it).  It explains what effect each parameter has on the behavior of the function and\nwhat type each parameter should be (if it is not obvious).",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 0,
+          "end_char": 463
+        },
+        "score": 0.1465616392336948,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[f87e205a74ed0628a0b5250b | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 39]\nChapter 3\n\nFunctions\n\nIn the context of programming, afunctionis a named sequence of statements that performs\na computation.  When you define a function, you specify the name and the sequence of\nstatements. Later, you can “call” the function by name.\n\n3.1    Function calls",
+    "context_ids": [
+      "f87e205a74ed0628a0b5250b"
+    ],
+    "context_chars": 368,
+    "elapsed_ms": 0.33179999445565045,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 31,
+          "evidence": "A variable is a name that refers to a value.",
+          "start_char": 150,
+          "end_char": 194
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 36,
+          "evidence": "variable:A name that refers to a value.",
+          "start_char": 134,
+          "end_char": 173
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "question": "Why is class not allowed as a variable name?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "6736797ff94d11b6ea4c8c89",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 26,
+        "text": "If you are not sure what type a value has, the interpreter can tell you:\n>>>  type(2)\n<class'int'>\n>>>  type(42.0)\n<class'float'>\n>>>  type('Hello,  World!')\n<class'str'>\nIn these results, the word “class” is used in the sense of a category; a type is a category of\nvalues.\n\nNot surprisingly, integers belong to the typeint, strings belong tostrand floating-point\nnumbers belong tofloat.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 4,
+          "start_char": 481,
+          "end_char": 868
+        },
+        "score": 0.2867644588591073,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "7d81695e517a29158b0e9de1",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 41,
+        "text": "The name of the function\nisprint_lyrics. The rules for function names are the same as for variable names: letters,\nnumbers and underscore are legal, but the first character can’t be a number. You can’t use a\nkeyword as the name of a function, and you should avoid having a variable and a function\nwith the same name.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 19,
+          "start_char": 1604,
+          "end_char": 1920
+        },
+        "score": 0.2704150779013478,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "a3c88b24065bb0fb71505923",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 46,
+        "text": "We will start writing fruitful functions in\na few chapters.\n\n3.11    Why functions?\n\nIt may not be clear why it is worth the trouble to divide a program into functions.  There\nare several reasons:",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 24,
+          "start_char": 1835,
+          "end_char": 2031
+        },
+        "score": 0.24650254384761017,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[6736797ff94d11b6ea4c8c89 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 26]\nIf you are not sure what type a value has, the interpreter can tell you:\n>>>  type(2)\n<class'int'>\n>>>  type(42.0)\n<class'float'>\n>>>  type('Hello,  World!')\n<class'str'>\nIn these results, the word “class” is used in the sense of a category; a type is a category of\nvalues.\n\nNot surprisingly, integers belong to the typeint, strings belong tostrand floating-point\nnumbers belong tofloat.\n\n[a3c88b24065bb0fb71505923 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 46]\nWe will start writing fruitful functions in\na few chapters.\n\n3.11    Why functions?\n\nIt may not be clear why it is worth the trouble to divide a program into functions.  There\nare several reasons:",
+    "context_ids": [
+      "6736797ff94d11b6ea4c8c89",
+      "a3c88b24065bb0fb71505923"
+    ],
+    "context_chars": 775,
+    "elapsed_ms": 0.3580000047804788,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 32,
+          "evidence": "It turns out thatclassis one of Python’skeywords.   The interpreter uses keywords to\nrecognize the structure of the program, and they cannot be used as variable names.",
+          "start_char": 889,
+          "end_char": 1056
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "question": "Why does a standalone expression in a Python script not display its result, and how can you display it?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "30778f61bef932f3ed9263c7",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 33,
+        "text": "Python evaluates the expression, but\nit doesn’t display the result. To display the result, you need aprintstatement like this:\nmiles  =  26.2\nprint(miles  *  1.61)\nThis behavior can be confusing at first.  To check your understanding, type the following\nstatements in the Python interpreter and see what they do:\n5\nx  =  5\nx  +  1\nNow put the same statements in a script and run it. What is the output? Modify the script\nby transforming each expression into a print statement and then run it again.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 11,
+          "start_char": 1776,
+          "end_char": 2274
+        },
+        "score": 0.3720913444869344,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "3390948daf2555a0df24953f",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 46,
+        "text": "math.sqrt(5)\nThis script computes the square root of 5, but since it doesn’t store or display the result, it\nis not very useful.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 24,
+          "start_char": 1261,
+          "end_char": 1389
+        },
+        "score": 0.28023100061025735,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "89c8cf498ea77756b3aad3de",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 46,
+        "text": "When you call a fruitful function, you almost always want to do something with the result;\nfor example, you might assign it to a variable or use it as part of an expression:\nx  =  math.cos(radians)\ngolden  =  (math.sqrt(5)  +  1)  /  2\nWhen you call a function in interactive mode, Python displays the result:\n>>>  math.sqrt(5)\n2.2360679774997898\nBut in a script, if you call a fruitful function all by itself, the return value is lost forever!",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 24,
+          "start_char": 816,
+          "end_char": 1260
+        },
+        "score": 0.19661408962430277,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[30778f61bef932f3ed9263c7 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 33]\nPython evaluates the expression, but\nit doesn’t display the result. To display the result, you need aprintstatement like this:\nmiles  =  26.2\nprint(miles  *  1.61)\nThis behavior can be confusing at first.  To check your understanding, type the following\nstatements in the Python interpreter and see what they do:\n5\nx  =  5\nx  +  1\nNow put the same statements in a script and run it. What is the output? Modify the script\nby transforming each expression into a print statement and then run it again.",
+    "context_ids": [
+      "30778f61bef932f3ed9263c7"
+    ],
+    "context_chars": 593,
+    "elapsed_ms": 0.5183999892324209,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 33,
+          "evidence": "In script\nmode an expression, all by itself, has no visible effect.",
+          "start_char": 1708,
+          "end_char": 1775
+        },
+        {
+          "source_id": "think-python-2e",
+          "page": 33,
+          "evidence": "Python evaluates the expression, but\nit doesn’t display the result. To display the result, you need aprintstatement like this:",
+          "start_char": 1776,
+          "end_char": 1902
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "question": "In chapter 2, when one operand of * is a string, what does the operation do and what type must the other operand have?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": {
+      "chapter": 2
+    },
+    "results": [
+      {
+        "id": "5bd599a53107fa8bec0e02eb",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 36,
+        "text": "operand:One of the values on which an operator operates.\n\nexpression:A combination of variables, operators, and values that represents a single re-\n       sult.\n\nevaluate:To simplify an expression by performing the operations in order to yield a single\n       value.\n\nstatement:A section of code that represents a command or action.  So far, the statements\n       we have seen are assignments and print statements.\n\nexecute:To run a statement and do what it says.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 14,
+          "start_char": 458,
+          "end_char": 921
+        },
+        "score": 0.21453819546196093,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "e29a9d771ac81bb2586ba2b8",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 36,
+        "text": "semantic error:An error in a program that makes it do something other than what the\n       programmer intended.\n\n2.10    Exercises\n\nExercise 2.1.Repeating my advice from the previous chapter, whenever you learn a new feature,\nyou should try it out in interactive mode and make errors on purpose to see what goes wrong.\n\n   •We’ve seen thatn  =  42is legal. What about42  =  n?",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 14,
+          "start_char": 1703,
+          "end_char": 2079
+        },
+        "score": 0.18340271241724754,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "5109861fb586dcfa1620c979",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 35,
+        "text": "If  there  is  a  semantic  error  in  your  program,  it  will  run  without  generating  error\n       messages, but it will not do the right thing.  It will do something else.  Specifically, it\n       will do what you told it to do.\n       Identifying semantic errors can be tricky because it requires you to work backward\n       by looking at the output of the program and trying to figure out what it is doing.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 13,
+          "start_char": 2569,
+          "end_char": 2983
+        },
+        "score": 0.14723018702223414,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[5bd599a53107fa8bec0e02eb | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 36]\noperand:One of the values on which an operator operates.\n\nexpression:A combination of variables, operators, and values that represents a single re-\n       sult.\n\nevaluate:To simplify an expression by performing the operations in order to yield a single\n       value.\n\nstatement:A section of code that represents a command or action.  So far, the statements\n       we have seen are assignments and print statements.\n\nexecute:To run a statement and do what it says.",
+    "context_ids": [
+      "5bd599a53107fa8bec0e02eb"
+    ],
+    "context_chars": 558,
+    "elapsed_ms": 0.6898999999975786,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 34,
+          "evidence": "The*operator also works on strings;  it performs repetition.   For example,'Spam'*3is\n'SpamSpamSpam'. If one of the values is a string, the other has to be an integer.",
+          "start_char": 1653,
+          "end_char": 1820
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "Does int round a floating-point value to the nearest integer when converting it?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "9d18da86eebbf287b14ae350",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 39,
+        "text": "Theintfunction\ntakes any value and converts it to an integer, if it can, or complains otherwise:\n>>>  int('32')\n32\n>>>  int('Hello')\nValueError:  invalid  literal  for  int():  Hello\nintcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:\n>>>  int(3.99999)\n3\n>>>  int(-2.3)\n-2\nfloatconverts integers and strings to floating-point numbers:\n>>>  float(32)\n32.0\n>>>  float('3.14159')\n3.14159",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 17,
+          "start_char": 710,
+          "end_char": 1150
+        },
+        "score": 0.420035626982154,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "84fbf11d25a75404c5495fd8",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 55,
+        "text": "If you are using Python 2, the value ofanglemight be off because of integer division.  A\nsimple solution is to computeangle  =  360.0  /  n.  Because the numerator is a floating-\npoint number, the result is floating point.\nWhen a function has more than a few numeric arguments, it is easy to forget what they are,\nor what order they should be in.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 33,
+          "start_char": 203,
+          "end_char": 549
+        },
+        "score": 0.342272943097463,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "116dcc6a5aef142d6b82c926",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 29,
+        "text": "type:A category of values. The types we have seen so far are integers (typeint), floating-\n       point numbers (typefloat), and strings (typestr).\n\ninteger:A type that represents whole numbers.\n\nfloating-point:A type that represents numbers with fractional parts.\n\nstring:A type that represents sequences of characters.\n\nnatural language:Any one of the languages that people speak that evolved naturally.",
+        "metadata": {
+          "chapter": 1,
+          "chapter_title": "The way of the program",
+          "printed_page": 7,
+          "start_char": 479,
+          "end_char": 884
+        },
+        "score": 0.2152857253252622,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[9d18da86eebbf287b14ae350 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 39]\nTheintfunction\ntakes any value and converts it to an integer, if it can, or complains otherwise:\n>>>  int('32')\n32\n>>>  int('Hello')\nValueError:  invalid  literal  for  int():  Hello\nintcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:\n>>>  int(3.99999)\n3\n>>>  int(-2.3)\n-2\nfloatconverts integers and strings to floating-point numbers:\n>>>  float(32)\n32.0\n>>>  float('3.14159')\n3.14159",
+    "context_ids": [
+      "9d18da86eebbf287b14ae350"
+    ],
+    "context_chars": 535,
+    "elapsed_ms": 0.4695999959949404,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 39,
+          "evidence": "intcan convert floating-point values to integers, but it doesn’t round off; it chops off the\nfraction part:",
+          "start_char": 893,
+          "end_char": 1000
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "question": "Does executing a function definition immediately run the statements inside the function?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "d05faa0b8be81490e134c8f0",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "26                                                                                                                     Chapter 3. Functions\n\nbody:The sequence of statements inside a function definition.\n\nparameter:A name used inside a function to refer to the value passed as an argument.\n\nfunction call:A statement that runs a function.  It consists of the function name followed\n       by an argument list in parentheses.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 0,
+          "end_char": 423
+        },
+        "score": 0.3791887139930127,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "8c83724f1c5f2e994b19c850",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 42,
+        "text": "repeat_lyrics()\nThis program contains two function definitions:print_lyricsandrepeat_lyrics. Func-\ntion definitions get executed just like other statements, but the effect is to create function\nobjects.  The statements inside the function do not run until the function is called, and the\nfunction definition generates no output.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 20,
+          "start_char": 1527,
+          "end_char": 1855
+        },
+        "score": 0.37147383875837603,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "149c942b5ec82b8832bfb571",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 54,
+        "text": "square(bob)\nThe innermost statements,fdandltare indented twice to show that they are inside the\nforloop, which is inside the function definition. The next line,square(bob), is flush with\nthe left margin, which indicates the end of both theforloop and the function definition.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 32,
+          "start_char": 403,
+          "end_char": 678
+        },
+        "score": 0.33273295809371084,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[d05faa0b8be81490e134c8f0 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 48]\n26                                                                                                                     Chapter 3. Functions\n\nbody:The sequence of statements inside a function definition.\n\nparameter:A name used inside a function to refer to the value passed as an argument.\n\nfunction call:A statement that runs a function.  It consists of the function name followed\n       by an argument list in parentheses.",
+    "context_ids": [
+      "d05faa0b8be81490e134c8f0"
+    ],
+    "context_chars": 518,
+    "elapsed_ms": 0.4020000051241368,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 42,
+          "evidence": "The statements inside the function do not run until the function is called, and the\nfunction definition generates no output.",
+          "start_char": 1731,
+          "end_char": 1855
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 43,
+          "evidence": "Function definitions do not alter the flow of execution of the program, but remember that\nstatements inside the function don’t run until the function is called.",
+          "start_char": 931,
+          "end_char": 1091
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "question": "In chapter 3, what does it mean for a variable created inside a function to be local?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": {
+      "chapter": 3
+    },
+    "results": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "argument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 425,
+          "end_char": 896
+        },
+        "score": 0.3680326585061327,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "d05faa0b8be81490e134c8f0",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "26                                                                                                                     Chapter 3. Functions\n\nbody:The sequence of statements inside a function definition.\n\nparameter:A name used inside a function to refer to the value passed as an argument.\n\nfunction call:A statement that runs a function.  It consists of the function name followed\n       by an argument list in parentheses.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 0,
+          "end_char": 423
+        },
+        "score": 0.27988334178498825,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "c2ce2cf7e3fe3ef8eae710ef",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 45,
+        "text": "To keep track of which variables can be used where, it is sometimes useful to draw astack\ndiagram.  Like state diagrams, stack diagrams show the value of each variable, but they\nalso show the function each variable belongs to.\n\nEach function is represented by aframe.  A frame is a box with the name of a function\nbeside it and the parameters and variables of the function inside it. The stack diagram for\nthe previous example is shown in Figure 3.1.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 23,
+          "start_char": 386,
+          "end_char": 836
+        },
+        "score": 0.2029306922624056,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[dd1bf77ddb19877772dc93ab | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 48]\nargument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+    "context_ids": [
+      "dd1bf77ddb19877772dc93ab"
+    ],
+    "context_chars": 566,
+    "elapsed_ms": 1.5281999949365854,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 44,
+          "evidence": "When you create a variable inside a function, it islocal, which means that it only exists\ninside the function.",
+          "start_char": 1139,
+          "end_char": 1249
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "local variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.",
+          "start_char": 576,
+          "end_char": 703
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "What distinguishes a fruitful function from a void function in the book's terminology?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "argument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 425,
+          "end_char": 896
+        },
+        "score": 0.31499494771996955,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "89c8cf498ea77756b3aad3de",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 46,
+        "text": "When you call a fruitful function, you almost always want to do something with the result;\nfor example, you might assign it to a variable or use it as part of an expression:\nx  =  math.cos(radians)\ngolden  =  (math.sqrt(5)  +  1)  /  2\nWhen you call a function in interactive mode, Python displays the result:\n>>>  math.sqrt(5)\n2.2360679774997898\nBut in a script, if you call a fruitful function all by itself, the return value is lost forever!",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 24,
+          "start_char": 816,
+          "end_char": 1260
+        },
+        "score": 0.24319432967795918,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "c68331d5eaad34e17367e9cc",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "void function:A function that always returnsNone.\n\nNone: A special value returned by void functions.\n\nmodule:A file that contains a collection of related functions and other definitions.\n\nimport statement:A statement that reads a module file and creates a module object.\n\nmodule object:A value created by animportstatement that provides access to the values\n       defined in a module.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 898,
+          "end_char": 1283
+        },
+        "score": 0.23141653983233726,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": true
+      }
+    ],
+    "context": "[dd1bf77ddb19877772dc93ab | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 48]\nargument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+    "context_ids": [
+      "dd1bf77ddb19877772dc93ab"
+    ],
+    "context_chars": 566,
+    "elapsed_ms": 0.44550000166054815,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 46,
+          "evidence": "Some of the functions we have used, such as the math functions, return results; for lack of\na better name, I call themfruitful functions.  Other functions, likeprint_twice, perform\nan action but don’t return a value. They are calledvoid functions.",
+          "start_char": 567,
+          "end_char": 814
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "fruitful function:A function that returns a value.",
+          "start_char": 846,
+          "end_char": 896
+        },
+        {
+          "source_id": "think-python-2e",
+          "page": 48,
+          "evidence": "void function:A function that always returnsNone.",
+          "start_char": 898,
+          "end_char": 947
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "question": "When is an expression supplied as a function argument evaluated relative to the function call?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "argument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 425,
+          "end_char": 896
+        },
+        "score": 0.40099473664863705,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "d05faa0b8be81490e134c8f0",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 48,
+        "text": "26                                                                                                                     Chapter 3. Functions\n\nbody:The sequence of statements inside a function definition.\n\nparameter:A name used inside a function to refer to the value passed as an argument.\n\nfunction call:A statement that runs a function.  It consists of the function name followed\n       by an argument list in parentheses.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 26,
+          "start_char": 0,
+          "end_char": 423
+        },
+        "score": 0.34740692011904073,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "bb21917efce6f7ead9e9f741",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 39,
+        "text": "We have already seen one example of afunction call:\n>>>  type(42)\n<class'int'>\nThe name of the function istype. The expression in parentheses is called theargumentof\nthe function. The result, for this function, is the type of the argument.\nIt is common to say that a function “takes” an argument and “returns” a result. The result\nis also called thereturn value.\nPython provides functions that convert values from one type to another.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 17,
+          "start_char": 275,
+          "end_char": 709
+        },
+        "score": 0.29854297626343806,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[dd1bf77ddb19877772dc93ab | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 48]\nargument:A value provided to a function when the function is called.  This value is as-\n       signed to the corresponding parameter in the function.\n\nlocal variable:A  variable  defined  inside  a  function.   A  local  variable  can  only  be  used\n       inside its function.\n\nreturn value:The result of a function. If a function call is used as an expression, the return\n       value is the value of the expression.\n\nfruitful function:A function that returns a value.",
+    "context_ids": [
+      "dd1bf77ddb19877772dc93ab"
+    ],
+    "context_chars": 566,
+    "elapsed_ms": 0.48319999768864363,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 44,
+          "evidence": "The argument is evaluated before the function is called",
+          "start_char": 553,
+          "end_char": 608
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "What is the name of rearranging a program to improve interfaces and make code easier to reuse?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "73fa8f9282d319c265d1416c",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "interface:A description of how to use a function, including the name and descriptions of\n       the arguments and return value.\n\nrefactoring:The process of modifying a working program to improve function interfaces\n       and other qualities of the code.\n\ndevelopment plan:A process for writing programs.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 2330,
+          "end_char": 2634
+        },
+        "score": 0.2996183130005287,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "3bd0782d554b96a9c34d13c0",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 57,
+        "text": "4.8. A development plan                                                                                                               35\n\ndef  circle(t,  r):\n     arc(t,  r,  360)\nThis process—rearranging a program to improve interfaces and facilitate code re-use—is\ncalledrefactoring. In this case, we noticed that there was similar code inarcandpolygon,\nso we “factored it out” intopolyline.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 35,
+          "start_char": 0,
+          "end_char": 393
+        },
+        "score": 0.2950880742401128,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": true
+      },
+      {
+        "id": "7875b3794b6f84e910384e5d",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 47,
+        "text": "3.12. Debugging                                                                                                                             25\n\n   •  Creating a new function gives you an opportunity to name a group of statements,\n      which makes your program easier to read and debug.\n\n   •  Functions can make a program smaller by eliminating repetitive code.  Later, if you\n      make a change, you only have to make it in one place.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 25,
+          "start_char": 0,
+          "end_char": 437
+        },
+        "score": 0.28167271643475145,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[73fa8f9282d319c265d1416c | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 58]\ninterface:A description of how to use a function, including the name and descriptions of\n       the arguments and return value.\n\nrefactoring:The process of modifying a working program to improve function interfaces\n       and other qualities of the code.\n\ndevelopment plan:A process for writing programs.",
+    "context_ids": [
+      "73fa8f9282d319c265d1416c"
+    ],
+    "context_chars": 399,
+    "elapsed_ms": 0.5493000062415376,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 57,
+          "evidence": "This process—rearranging a program to improve interfaces and facilitate code re-use—is\ncalledrefactoring.",
+          "start_char": 180,
+          "end_char": 285
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 58,
+          "evidence": "refactoring:The process of modifying a working program to improve function interfaces\n       and other qualities of the code.",
+          "start_char": 2459,
+          "end_char": 2584
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "Where is a docstring placed, and what does it explain?",
+    "answerable": true,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "c37387c05351462db0f300d9",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "36                                                                                    Chapter 4. Case study: interface design\n\nIt is terse, but it contains the essential information someone would need to use this func-\ntion.  It explains concisely what the function does (without getting into the details of how\nit does it).  It explains what effect each parameter has on the behavior of the function and\nwhat type each parameter should be (if it is not obvious).",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 0,
+          "end_char": 463
+        },
+        "score": 0.22702315346751772,
+        "strategy": "tfidf",
+        "rank": 1,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "acf35ef93e03adcab27738d5",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 70,
+        "text": "1.  What would happen if you called this function like this:recurse(-1,  0)?\n\n   2.  Write a docstring that explains everything someone would need to know in order to use this\n       function (and nothing else).\n\nThe following exercises use theturtlemodule, described in Chapter 4:\nExercise 5.5.Read the following function and see if you can figure out what it does (see the exam-\nples in Chapter 4). Then run it and see if you got it right.",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 48,
+          "start_char": 2182,
+          "end_char": 2623
+        },
+        "score": 0.19893140125967704,
+        "strategy": "tfidf",
+        "rank": 2,
+        "supports_any_fragment": false
+      },
+      {
+        "id": "82440b27caf9e9c3d31f6443",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 43,
+        "text": "That sounds simple enough, until you remember that one function can call another. While\nin the middle of one function, the program might have to run the statements in another\nfunction.  Then, while running that new function, the program might have to run yet an-\nother function!\nFortunately, Python is good at keeping track of where it is, so each time a function com-\npletes, the program picks up where it left off in the function that called it.",
+        "metadata": {
+          "chapter": 3,
+          "chapter_title": "Functions",
+          "printed_page": 21,
+          "start_char": 1317,
+          "end_char": 1764
+        },
+        "score": 0.15066913938596432,
+        "strategy": "tfidf",
+        "rank": 3,
+        "supports_any_fragment": false
+      }
+    ],
+    "context": "[c37387c05351462db0f300d9 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 58]\n36                                                                                    Chapter 4. Case study: interface design\n\nIt is terse, but it contains the essential information someone would need to use this func-\ntion.  It explains concisely what the function does (without getting into the details of how\nit does it).  It explains what effect each parameter has on the behavior of the function and\nwhat type each parameter should be (if it is not obvious).",
+    "context_ids": [
+      "c37387c05351462db0f300d9"
+    ],
+    "context_chars": 558,
+    "elapsed_ms": 0.3660000074887648,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "agent_answer_evaluated": false,
+    "gold_sets": [
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 57,
+          "evidence": "Adocstringis a string at the beginning of a function that explains the interface",
+          "start_char": 1731,
+          "end_char": 1811
+        }
+      ],
+      [
+        {
+          "source_id": "think-python-2e",
+          "page": 59,
+          "evidence": "docstring:A string that appears at the top of a function definition to document the func-\n       tion’s interface.",
+          "start_char": 293,
+          "end_char": 407
+        }
+      ]
+    ]
+  },
+  {
+    "query_id": "dev-absent-01",
+    "split": "dev",
+    "question": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+    "answerable": false,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "72282302efda3b00daa2609e",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 31,
+        "text": "This kind of figure is called astate diagrambecause it shows what state each\nof the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result\nof the previous example.\n\n2.2    Variable names\n\nProgrammers generally choose names for their variables that are meaningful—they docu-\nment what the variable is used for.\n\n                                     Figure 2.1: State diagram.",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 9,
+          "start_char": 692,
+          "end_char": 1102
+        },
+        "score": 0.2200564214858848,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "c37387c05351462db0f300d9",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 58,
+        "text": "36                                                                                    Chapter 4. Case study: interface design\n\nIt is terse, but it contains the essential information someone would need to use this func-\ntion.  It explains concisely what the function does (without getting into the details of how\nit does it).  It explains what effect each parameter has on the behavior of the function and\nwhat type each parameter should be (if it is not obvious).",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 36,
+          "start_char": 0,
+          "end_char": 463
+        },
+        "score": 0.1679791363982831,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "14beeef72811502d7b96ceec",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 37,
+        "text": "2.  Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. Shipping costs\n        $3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for\n        60 copies?\n\n    3.  If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at\n        tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?",
+        "metadata": {
+          "chapter": 2,
+          "chapter_title": "Variables, expressions and statements",
+          "printed_page": 15,
+          "start_char": 674,
+          "end_char": 1101
+        },
+        "score": 0.1414544909011139,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[72282302efda3b00daa2609e | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 31]\nThis kind of figure is called astate diagrambecause it shows what state each\nof the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result\nof the previous example.\n\n2.2    Variable names\n\nProgrammers generally choose names for their variables that are meaningful—they docu-\nment what the variable is used for.\n\n                                     Figure 2.1: State diagram.",
+    "context_ids": [
+      "72282302efda3b00daa2609e"
+    ],
+    "context_chars": 505,
+    "elapsed_ms": 0.3440000000409782,
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null,
+    "agent_answer_evaluated": false
+  },
+  {
+    "query_id": "dev-absent-02",
+    "split": "dev",
+    "question": "What minimum CPU clock speed in GHz does the indexed material require for running Turtle programs?",
+    "answerable": false,
+    "status": "retrieved",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "requested_filter": null,
+    "results": [
+      {
+        "id": "b97dbc87c7e5f2131349fbe8",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 51,
+        "text": "Create a file namedmypolygon.pyand type in the following code:\nimport  turtle\nbob  =  turtle.Turtle()\nprint(bob)\nturtle.mainloop()\nTheturtlemodule (with a lowercase ’t’) provides a function calledTurtle(with an up-\npercase ’T’) that creates a Turtle object, which we assign to a variable namedbob. Printing\nbobdisplays something like:\n<turtle.Turtle  object  at  0xb7bfbf4c>",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 29,
+          "start_char": 1028,
+          "end_char": 1402
+        },
+        "score": 0.21427050155194716,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "2bc9b1453cc61559102cba7f",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 51,
+        "text": "To check whether you have theturtlemodule, open the Python interpreter and type\n>>>  import  turtle\n>>>  bob  =  turtle.Turtle()\nWhen you run this code, it should create a new window with small arrow that represents\nthe turtle. Close the window.",
+        "metadata": {
+          "chapter": 4,
+          "chapter_title": "Case study: interface design",
+          "printed_page": 29,
+          "start_char": 781,
+          "end_char": 1026
+        },
+        "score": 0.18152042653473688,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "8c513facb65b6e762670b25d",
+        "source_id": "think-python-2e",
+        "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "page": 68,
+        "text": "46                                                                                      Chapter 5. Conditionals and recursion\n\nBut if the user types something other than a string of digits, you get an error:\n>>>  speed  =  input(prompt)\nWhat...is  the  airspeed  velocity  of  an  unladen  swallow?\nWhat  do  you  mean,  an  African  or  a  European  swallow?\n>>>  int(speed)\nValueError:  invalid  literal  for  int()  with  base  10\nWe will see how to handle this kind of error later.",
+        "metadata": {
+          "chapter": 5,
+          "chapter_title": "Conditionals and recursion",
+          "printed_page": 46,
+          "start_char": 0,
+          "end_char": 485
+        },
+        "score": 0.17993337508754143,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[b97dbc87c7e5f2131349fbe8 | https://greenteapress.com/thinkpython2/thinkpython2.pdf | page 51]\nCreate a file namedmypolygon.pyand type in the following code:\nimport  turtle\nbob  =  turtle.Turtle()\nprint(bob)\nturtle.mainloop()\nTheturtlemodule (with a lowercase ’t’) provides a function calledTurtle(with an up-\npercase ’T’) that creates a Turtle object, which we assign to a variable namedbob. Printing\nbobdisplays something like:\n<turtle.Turtle  object  at  0xb7bfbf4c>",
+    "context_ids": [
+      "b97dbc87c7e5f2131349fbe8"
+    ],
+    "context_chars": 469,
+    "elapsed_ms": 0.3981000045314431,
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null,
+    "agent_answer_evaluated": false
+  }
+]

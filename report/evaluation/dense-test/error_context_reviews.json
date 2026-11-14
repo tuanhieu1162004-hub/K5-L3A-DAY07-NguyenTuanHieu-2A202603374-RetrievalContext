@@ -1,0 +1,9 @@
+[
+  {
+    "query_id": "test-new-03",
+    "context_grade": 2,
+    "reason": "PDF55 e270 explicitly explains r as the desired circle and n as rendering detail. Context is sufficient; model repeatedly failed single-tool final-decision protocol until the five-call limit.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "human_reviewed": false
+  }
+]

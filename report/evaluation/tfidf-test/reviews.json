@@ -1,0 +1,118 @@
+[
+  {
+    "query_id": "test-new-01",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF34 explicitly gives left-to-right evaluation for operators with equal precedence, including division and multiplication.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [
+      {
+        "id": "10a5eb21f23b8d6343d53552",
+        "supported": true,
+        "reason": "Cited rule and worked example directly support the answer."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-new-02",
+    "citation_support": [],
+    "context_grade": 0,
+    "reason": "False abstention on an answerable corpus question after two searches. Final context discusses scripts, names and versions but lacks the import-placement convention on PDF55; no unsupported answer was invented.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "test-new-03",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF55 explains radius as desired circle and segment count as rendering implementation detail, chosen internally from circumference. Answer preserves this contrast.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [
+      {
+        "id": "e270afe7f4b871d4822c0b0f",
+        "supported": true,
+        "reason": "Cited interface paragraph contains both roles and the internal choice of n; neighboring paragraph explains segment-size tradeoff."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-new-04",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF58 directly locates the bug in caller when documented preconditions are violated.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [
+      {
+        "id": "b05b320dcb5b8ceebf7c6515",
+        "supported": true,
+        "reason": "Exact responsibility and condition are in cited paragraph."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-new-05",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF56 explicitly states approximate length3 and minimum3 sides, with the exact n formula.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [
+      {
+        "id": "c644a8e921f69c45d5d6671a",
+        "supported": true,
+        "reason": "Cited paragraph supports both requested quantities."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-absent-01",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal, no asserted megabyte value. Whole indexed-corpus audit and interpreter/recursion passages contain no prescribed heap size.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "test-absent-02",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal, no guessed maximum. Window setup passages and corpus-wide absence audit contain no simultaneous-window numeric limit.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "8c9b889976229ffb39ee8b1a1fc65ce0b1036a0769f1e64794b18b95b7940d8f",
+    "citation_reviews": [],
+    "abstention_correct": true
+  }
+]

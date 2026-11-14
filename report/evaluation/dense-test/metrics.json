@@ -1,0 +1,87 @@
+{
+  "cases": 7,
+  "provider_errors": 1,
+  "tool_use": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 0,
+    "2": 3,
+    "N": 4,
+    "mean": 1.5
+  },
+  "citation_validity": {
+    "n": 3,
+    "N": 4,
+    "rate": 0.75
+  },
+  "answer_citation_coverage": {
+    "n": 4,
+    "N": 4,
+    "rate": 1.0
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 4,
+    "rate": 0.0
+  },
+  "false_abstention_content_review": {
+    "n": 0,
+    "N": 4,
+    "additional_ids": [],
+    "rate": 0.0
+  },
+  "alias": "dense-test",
+  "split": "test",
+  "run_id": "20261114_233848_193202",
+  "reviewer": "Codex (AI), source-based offline review; not human certification",
+  "human_reviewed": false,
+  "context_grades": {
+    "2": 4,
+    "0": 1
+  },
+  "rewritten_query_ids": [
+    "test-new-03",
+    "test-absent-02"
+  ],
+  "context_evidence": {
+    "n": 4,
+    "N": 5,
+    "rate": 0.8
+  },
+  "search_count_distribution": {
+    "1": 7
+  },
+  "model_call_distribution": {
+    "2": 6,
+    "5": 1
+  },
+  "elapsed_seconds": 350.01266900000337,
+  "median_query_seconds": 31.25032839999767,
+  "summary": {
+    "run_id": "20261114_233848_193202",
+    "model": "qwen3:4b-instruct",
+    "method": "dense",
+    "split": "test",
+    "n": 7,
+    "answered": 4,
+    "abstain": 2,
+    "errors": 1,
+    "model_calls": 17,
+    "searches": 7,
+    "prompt_tokens": 16938,
+    "output_tokens": 1151,
+    "token_counts_unknown_calls": 0,
+    "service_cost_usd": 0,
+    "quality_review": "pending; citation ID validation is not semantic support",
+    "run_directory": "C:\\Users\\Admin\\Downloads\\K5-L3-Day07-Retrieval-Context-Engineering-main\\K5-L3-Day07-Retrieval-Context-Engineering-main\\starter\\results\\agent-test-dense-instruct\\20261114_233848_193202"
+  }
+}

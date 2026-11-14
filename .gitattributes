@@ -1,0 +1,10 @@
+# Preserve hashed snapshots/runtime bytes across Windows/Linux; normalize other text.
+* text=auto
+artifacts/** -text
+data/day7_benchmark/** -text
+data/day7_additions.json -text
+starter/run_agent.py -text
+starter/ollama_agent.py -text
+starter/retrievers.py -text
+starter/baseline.py -text
+starter/check_ollama.py -text

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "dev-absent-01",
+    "split": "dev",
+    "question": "What exact monthly subscription price does the indexed material state for PythonAnywhere?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Indexed chapters recommend PythonAnywhere and describe its Turtle limitation but give no monthly subscription price.",
+    "absence_check": {"relevant_pages": [24, 33, 51], "search_terms": ["PythonAnywhere", "monthly", "subscription", "pricing", "price", "dollar", "$"], "review_note": "Read the PythonAnywhere passages and scan all 48 indexed pages; no amount or subscription plan is stated. Scope is the indexed chapters, not the external website."}
+  },
+  {
+    "id": "dev-absent-02",
+    "split": "dev",
+    "question": "What minimum CPU clock speed in GHz does the indexed material require for running Turtle programs?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Turtle setup describes installation and opening a window but specifies no CPU frequency requirement.",
+    "absence_check": {"relevant_pages": [51, 52], "search_terms": ["GHz", "MHz", "CPU", "processor", "clock speed"], "review_note": "Read the Turtle setup and scan all 48 indexed pages for hardware requirements. No numeric CPU frequency is prescribed."}
+  },
+  {
+    "id": "test-new-01",
+    "split": "test",
+    "question": "In the book's PEMDAS explanation, when multiplication and division have equal precedence, in which order are they evaluated?",
+    "answerable": true,
+    "expected_answer": "From left to right. For degrees / 2 * pi, divide by 2 first and then multiply by pi.",
+    "gold": [{"source_id": "think-python-2e", "page": 34, "evidence": "So in the expressiondegrees / 2 * pi, the division happens first and the result is multiplied bypi."}]
+  },
+  {
+    "id": "test-new-02",
+    "split": "test",
+    "question": "Where does the book conventionally place import statements in a Python script?",
+    "answerable": true,
+    "expected_answer": "Usually at the beginning of the script.",
+    "gold": [{"source_id": "think-python-2e", "page": 55, "evidence": "By convention,importstatements are usually at the beginning of the script."}]
+  },
+  {
+    "id": "test-new-03",
+    "split": "test",
+    "question": "For a clean circle-drawing function interface, why does radius r belong as a parameter while the number of line segments n is less appropriate?",
+    "answerable": true,
+    "expected_answer": "r specifies the circle to draw; n describes the implementation detail of how the circle is rendered, which should be chosen internally.",
+    "gold": [{"source_id": "think-python-2e", "page": 55, "evidence": "In this example,rbelongs in the interface because it specifies the circle to be drawn.nis less appropriate because it pertains to the details ofhowthe circle should be rendered."}]
+  },
+  {
+    "id": "test-new-04",
+    "split": "test",
+    "question": "If a caller violates a properly documented precondition and a function fails, where does the book locate the bug?",
+    "answerable": true,
+    "expected_answer": "In the caller, not in the function.",
+    "gold": [{"source_id": "think-python-2e", "page": 58, "evidence": "If the caller violates a (properly docu- mented!) precondition and the function doesn’t work correctly, the bug is in the caller, not the function."}]
+  },
+  {
+    "id": "test-new-05",
+    "split": "test",
+    "question": "In the circle example, what approximate segment length is targeted by n = int(circumference / 3) + 3, and what does adding 3 guarantee?",
+    "answerable": true,
+    "expected_answer": "Each segment is approximately 3 units long, and the polygon has at least 3 sides.",
+    "gold": [{"source_id": "think-python-2e", "page": 56, "evidence": "Now the number of segments is an integer nearcircumference/3, so the length of each segment is approximately 3, which is small enough that the circles look good, but big enough to be efficient, and acceptable for any size circle. Adding 3 tonguarantees that the polygon has at least 3 sides."}]
+  },
+  {
+    "id": "test-absent-01",
+    "split": "test",
+    "question": "What exact maximum heap size in megabytes does the indexed material prescribe for the Python interpreter?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The indexed chapters explain the interpreter, values and recursion but prescribe no heap size in megabytes.",
+    "absence_check": {"relevant_pages": [24, 26, 65, 66, 67], "search_terms": ["heap", "megabyte", "memory limit", "MB"], "review_note": "Read interpreter and recursion passages and scan all 48 indexed pages. A recursion/stack discussion does not specify a heap size."}
+  },
+  {
+    "id": "test-absent-02",
+    "split": "test",
+    "question": "What exact numeric maximum does the indexed material specify for the number of simultaneous Turtle windows?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Turtle examples describe creating a window and Turtle objects but do not state a maximum number of simultaneous windows.",
+    "absence_check": {"relevant_pages": [51, 52], "search_terms": ["window", "simultaneous", "maximum", "limit"], "review_note": "Read Turtle setup/examples and all window-related passages across the 48-page corpus; no simultaneous-window limit is specified."}
+  }
+]

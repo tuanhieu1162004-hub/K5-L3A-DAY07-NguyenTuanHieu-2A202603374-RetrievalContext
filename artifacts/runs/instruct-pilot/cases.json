@@ -1,0 +1,17 @@
+[
+  {
+    "id": "q05",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev-absent-01",
+    "split": "dev",
+    "answerable": false
+  }
+]

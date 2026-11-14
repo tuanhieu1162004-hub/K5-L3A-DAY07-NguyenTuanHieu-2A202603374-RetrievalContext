@@ -1,0 +1,184 @@
+[
+  {
+    "query_id": "dev-absent-01",
+    "corpus_pages_scanned": 48,
+    "checks": [
+      {
+        "term": "PythonAnywhere",
+        "matches": [
+          {
+            "page": 24,
+            "context": "ages you can use to run Python. If you already have a fa- vorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed instructions for getting started athttp://tinyurl.com/thinkpython2e. There are two versions of Python, called Python 2 and Python 3. They are very similar, so"
+          },
+          {
+            "page": 33,
+            "context": "you know how to create and run a script on your computer, you are ready to go. Oth- erwise I recommend using PythonAnywhere again. I have posted instructions for running in script mode athttp://tinyurl.com/thinkpython2e. Because Python provides both modes, you can test bits of code in interactive mode"
+          },
+          {
+            "page": 51,
+            "context": "urtle graphics. Theturtlemodule is included in most Python installations, but if you are running Python using PythonAnywhere, you won’t be able to run the turtle examples (at least you couldn’t when I wrote this). If you have already installed Python on your computer, you should be able to"
+          }
+        ]
+      },
+      {
+        "term": "monthly",
+        "matches": []
+      },
+      {
+        "term": "subscription",
+        "matches": []
+      },
+      {
+        "term": "pricing",
+        "matches": []
+      },
+      {
+        "term": "price",
+        "matches": [
+          {
+            "page": 37,
+            "context": "sphere with radius r is 43πr 3. What is the volume of a sphere with radius 5? 2. Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. Shipping costs $3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for"
+          }
+        ]
+      },
+      {
+        "term": "dollar",
+        "matches": []
+      },
+      {
+        "term": "$",
+        "matches": [
+          {
+            "page": 27,
+            "context": "f the language, such as words, numbers, and chemical elements. One of the problems with 3+ =3$6 is that $ is not a legal token in mathematics (at least as far as I know). Similarly, 2Zzis not legal because there is no element with the abbreviationZz. The second type of syntax rule pe"
+          }
+        ]
+      }
+    ],
+    "reason": "Indexed chapters recommend PythonAnywhere and describe its Turtle limitation but give no monthly subscription price.",
+    "reviewer": "Codex (AI)",
+    "human_review_pending": true,
+    "limitation": "Keyword absence alone is not proof. Inspect relevant source passages and this audit before accepting the label."
+  },
+  {
+    "query_id": "dev-absent-02",
+    "corpus_pages_scanned": 48,
+    "checks": [
+      {
+        "term": "GHz",
+        "matches": []
+      },
+      {
+        "term": "MHz",
+        "matches": []
+      },
+      {
+        "term": "CPU",
+        "matches": []
+      },
+      {
+        "term": "processor",
+        "matches": []
+      },
+      {
+        "term": "clock speed",
+        "matches": []
+      }
+    ],
+    "reason": "The Turtle setup describes installation and opening a window but specifies no CPU frequency requirement.",
+    "reviewer": "Codex (AI)",
+    "human_review_pending": true,
+    "limitation": "Keyword absence alone is not proof. Inspect relevant source passages and this audit before accepting the label."
+  },
+  {
+    "query_id": "test-absent-01",
+    "corpus_pages_scanned": 48,
+    "checks": [
+      {
+        "term": "heap",
+        "matches": []
+      },
+      {
+        "term": "megabyte",
+        "matches": []
+      },
+      {
+        "term": "memory limit",
+        "matches": []
+      },
+      {
+        "term": "MB",
+        "matches": []
+      }
+    ],
+    "reason": "The indexed chapters explain the interpreter, values and recursion but prescribe no heap size in megabytes.",
+    "reviewer": "Codex (AI)",
+    "human_review_pending": true,
+    "limitation": "Keyword absence alone is not proof. Inspect relevant source passages and this audit before accepting the label."
+  },
+  {
+    "query_id": "test-absent-02",
+    "corpus_pages_scanned": 48,
+    "checks": [
+      {
+        "term": "window",
+        "matches": [
+          {
+            "page": 51,
+            "context": "eter and type >>> import turtle >>> bob = turtle.Turtle() When you run this code, it should create a new window with small arrow that represents the turtle. Close the window. Create a file namedmypolygon.pyand type in the following code: import turtle bob = turtle.Turtle() print(bob) tu"
+          },
+          {
+            "page": 51,
+            "context": "When you run this code, it should create a new window with small arrow that represents the turtle. Close the window. Create a file namedmypolygon.pyand type in the following code: import turtle bob = turtle.Turtle() print(bob) turtle.mainloop() Theturtlemodule (with a lowercase ’t’) provide"
+          },
+          {
+            "page": 52,
+            "context": "design This means thatbobrefers to an object with typeTurtleas defined in moduleturtle. mainlooptells the window to wait for the user to do something, although in this case there’s not much for the user to do except close the window. Once you create a Turtle, you can call ametho"
+          },
+          {
+            "page": 52,
+            "context": "the user to do something, although in this case there’s not much for the user to do except close the window. Once you create a Turtle, you can call amethodto move it around the window. A method is similar to a function, but it uses slightly different syntax. For example, to move the tu"
+          },
+          {
+            "page": 52,
+            "context": "the user to do except close the window. Once you create a Turtle, you can call amethodto move it around the window. A method is similar to a function, but it uses slightly different syntax. For example, to move the turtle forward: bob.fd(100) The method,fd, is associated with the turtle object"
+          }
+        ]
+      },
+      {
+        "term": "simultaneous",
+        "matches": []
+      },
+      {
+        "term": "maximum",
+        "matches": [
+          {
+            "page": 67,
+            "context": "ents, a program with infinite recursion does not really run forever. Python reports an error message when the maximum recursion depth is reached: File \"<stdin>\", line 2, in recurse File \"<stdin>\", line 2, in recurse File \"<stdin>\", line 2, in recurse"
+          },
+          {
+            "page": 67,
+            "context": ". . File \"<stdin>\", line 2, in recurse RuntimeError: Maximum recursion depth exceeded This traceback is a little bigger than the one we saw in the previous chapter. When the error occurs, there are 1000recurseframes on the stack! If you"
+          }
+        ]
+      },
+      {
+        "term": "limit",
+        "matches": [
+          {
+            "page": 63,
+            "context": "ons: a header followed by an indented body. Statements like this are calledcompound statements. There is no limit on the number of statements that can appear in the body, but there has to be at least one. Occasionally, it is useful to have a body with no statements (usually as a place keeper"
+          },
+          {
+            "page": 64,
+            "context": "'x and y are equal') elifis an abbreviation of “else if”. Again, exactly one branch will run. There is no limit on the number ofelifstatements. If there is anelseclause, it has to be at the end, but there doesn’t have to be one. if choice =='a': draw_a() elif choice =='b': d"
+          }
+        ]
+      }
+    ],
+    "reason": "The Turtle examples describe creating a window and Turtle objects but do not state a maximum number of simultaneous windows.",
+    "reviewer": "Codex (AI)",
+    "human_review_pending": true,
+    "limitation": "Keyword absence alone is not proof. Inspect relevant source passages and this audit before accepting the label."
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "query_id": "test-new-01",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF34 explicitly says equal-precedence operators are evaluated left to right with a division-then-multiplication example.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [
+      {
+        "id": "10a5eb21f23b8d6343d53552",
+        "supported": true,
+        "reason": "Direct equal-precedence rule, with exponentiation exception irrelevant to this question."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-new-02",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 0,
+    "reason": "Answer matches outside knowledge/reference, but none of the final chunks gives import placement; the required PDF55 passage is absent.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [
+      {
+        "id": "c68331d5eaad34e17367e9cc",
+        "supported": false,
+        "reason": "PDF48 import-statement glossary explains reading a module, not where imports are placed."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "test-new-04",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF58 states caller responsibility and locates the bug in caller when a documented precondition is violated.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [
+      {
+        "id": "b05b320dcb5b8ceebf7c6515",
+        "supported": true,
+        "reason": "Cited paragraph explicitly includes responsibility and documented-precondition condition."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-new-05",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF56 gives approximate segment length3 and at least3 sides from adding3, matching both requested conditions.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [
+      {
+        "id": "c644a8e921f69c45d5d6671a",
+        "supported": true,
+        "reason": "Both quantities and their meaning are explicit in cited code/explanation."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "test-absent-01",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal with no invented heap size. Corpus-wide absence audit and interpreter/recursion passages do not prescribe megabytes.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "test-absent-02",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal with no invented window limit. Turtle setup describes a window, not a maximum simultaneous-window count; full-corpus audit confirms scope.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "05d19710af4a7440674f6edc9dcd9ab79107480ef6995b25ffac4077bf0f5b57",
+    "citation_reviews": [],
+    "abstention_correct": true
+  }
+]

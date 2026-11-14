@@ -1,0 +1,85 @@
+{
+  "scope": "Complete dev execution comparison; content grading is pending",
+  "comparison_conditions_verified": true,
+  "baseline": {
+    "run_id": "20261114_201554_120565",
+    "model": "qwen3:4b",
+    "n": 17,
+    "answered": 8,
+    "abstain": 2,
+    "errors": 7,
+    "total_query_seconds": 4381.143513400006,
+    "prompt_tokens": 28058,
+    "output_tokens": 21913,
+    "error_ids": [
+      "q05",
+      "q07",
+      "q09",
+      "q12",
+      "q13",
+      "q14",
+      "q15"
+    ],
+    "truncated_ids": [
+      "q05",
+      "q07",
+      "q09",
+      "q12",
+      "q13",
+      "q14",
+      "q15"
+    ],
+    "thinking_characters": 86536,
+    "context_evidence": {
+      "n": 13,
+      "N": 15
+    },
+    "model_configuration": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "ollama_version": "0.40.16",
+      "thinking": true,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    }
+  },
+  "candidate": {
+    "run_id": "20261114_225910_368066",
+    "model": "qwen3:4b-instruct",
+    "n": 17,
+    "answered": 15,
+    "abstain": 2,
+    "errors": 0,
+    "total_query_seconds": 659.9482486999768,
+    "prompt_tokens": 33298,
+    "output_tokens": 1865,
+    "error_ids": [],
+    "truncated_ids": [],
+    "thinking_characters": 0,
+    "context_evidence": {
+      "n": 14,
+      "N": 15
+    },
+    "model_configuration": {
+      "provider": "local Ollama",
+      "model": "qwen3:4b-instruct",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "ollama_version": "0.40.16",
+      "thinking": null,
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_output_tokens": 1024,
+      "max_model_calls": 5,
+      "native_tool_calling": true,
+      "reasoning_mode": "default"
+    }
+  },
+  "candidate_review_template": "C:\\Users\\Admin\\Downloads\\K5-L3-Day07-Retrieval-Context-Engineering-main\\K5-L3-Day07-Retrieval-Context-Engineering-main\\starter\\results\\agent-dev-dense-instruct\\20261114_225910_368066\\reviews_template.json"
+}

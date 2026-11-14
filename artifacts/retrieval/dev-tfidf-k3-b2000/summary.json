@@ -1,0 +1,39 @@
+{
+  "strategy": "tfidf",
+  "n_total": 17,
+  "n_answerable": 15,
+  "n_unanswerable": 2,
+  "top_k": 3,
+  "budget_chars": 2000,
+  "metrics": {
+    "Hit@1": {
+      "n": 5,
+      "N": 15,
+      "rate": 0.3333333333333333
+    },
+    "Evidence Hit@3": {
+      "n": 8,
+      "N": 15,
+      "rate": 0.5333333333333333
+    },
+    "Context Evidence Rate": {
+      "n": 8,
+      "N": 15,
+      "rate": 0.5333333333333333
+    }
+  },
+  "median_ms": 0.3858999989461154,
+  "avg_context_chars": 1462.1764705882354,
+  "service_cost_usd": 0,
+  "agent_answer_evaluated": false,
+  "note": "Unanswerable cases have retrieval traces but are excluded from evidence metrics. Abstention requires a real agent and separate reviews.",
+  "split": "dev",
+  "index_seconds": 0.01414929999737069,
+  "configuration": {
+    "method": "TF-IDF cosine",
+    "idf_corpus_chunks": 271,
+    "filter_policy": "Supplied metadata filters applied before top-k"
+  },
+  "chunks_sha256": "62f935e650eb7319731971cedc9fbd0c89b7a78360badff4a164e0cacd2732b0",
+  "questions_sha256": "d82b34eb965ec04d3fa3075d448a8ca9978d087ebd2386a218ba682f899beaec"
+}

@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-11-14T15:34:06+07:00",
+  "benchmark_version": "day7-think-python-v1",
+  "chunk_strategy": "C",
+  "input_sha256": {
+    "chunks": "62f935e650eb7319731971cedc9fbd0c89b7a78360badff4a164e0cacd2732b0",
+    "dev_draft": "0faa5794c21bb9e9d3b7a8d9b1764bf60d2b49d07789a275f4207d70b1950069",
+    "additions": "81f7e53a57aad7a7e7176064153d35891abc69c7dcffe068f7416e455a232502",
+    "source_pages": "be645f53bf301489b208052905ef3d393d4d18c3c96b967fc43bfee0425dd62f",
+    "source_pdf": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94"
+  },
+  "output_sha256": {
+    "questions_dev.json": "d82b34eb965ec04d3fa3075d448a8ca9978d087ebd2386a218ba682f899beaec",
+    "questions_test.json": "334018f93d7ef63ea73792911c6f6002e314fb2058d295c51816fc9ed92694e7",
+    "cases.json": "ec293cb0e334e67847ee014c0280dba72913c222a9cca9b7869577bedd28dd0a",
+    "absence_audit.json": "adae2699c88a1896440380787b7eb433f537ec00c321c4077e32be3c708092e5"
+  },
+  "counts": {
+    "dev_answerable": 15,
+    "dev_unanswerable": 2,
+    "test_answerable": 5,
+    "test_unanswerable": 2
+  },
+  "selection_rule": [
+    "Compare real-agent answer quality and supported citations on dev",
+    "Then compare evidence coverage, latency and cost"
+  ],
+  "evidence_rule": "Whitespace folding only; source/page/offsets must match. OR between gold_sets, AND within each set. Same full-coverage rule for top-1, top-3 and final context.",
+  "test_policy": "New test questions authored before Day 7 retrieval. Do not evaluate test until configurations are selected on dev. Old Day 6 test questions are not reused.",
+  "review_status": "AI-prepared benchmark; user/human source and absence-label review pending."
+}

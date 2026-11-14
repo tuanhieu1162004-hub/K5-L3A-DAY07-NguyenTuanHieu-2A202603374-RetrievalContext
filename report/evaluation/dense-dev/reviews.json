@@ -1,0 +1,350 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true,
+      false
+    ],
+    "context_grade": 2,
+    "reason": "Definition is supported on PDF28. PDF36 supports interactive/script modes, but not the added line-by-line and immediate-feedback claim.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "588a2586f952d92e2134a52f",
+        "supported": true,
+        "reason": "PDF28 directly defines interpreter."
+      },
+      {
+        "id": "e10ecac6a58a9974976be680",
+        "supported": false,
+        "reason": "PDF36 mode definitions do not establish all added execution claims."
+      }
+    ],
+    "answer_grade": 1
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF27 explicitly supports unambiguous formal language and redundancy contrast.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "8b450acd31f27b77b9302f2e",
+        "supported": true,
+        "reason": "Ambiguity paragraph supports the first claim."
+      },
+      {
+        "id": "064a156c6558e1b0678c1da1",
+        "supported": true,
+        "reason": "Redundancy paragraph supports the second claim."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF28 defines prompt as readiness for input and interpreter as reading/executing programs; PDF24 also explicitly explains entering code.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "588a2586f952d92e2134a52f",
+        "supported": true,
+        "reason": "Prompt and interpreter definitions jointly support the answer."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF25 explicitly identifies ** as exponentiation.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "09829ead7af7fc053d174bf7",
+        "supported": true,
+        "reason": "Operator and meaning appear together in cited chunk."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "Both PDF36 glossary and PDF31 introduction define variable as a name referring to a value.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "2cde73c27461559f77e0ede7",
+        "supported": true,
+        "reason": "Direct definition on PDF36."
+      },
+      {
+        "id": "1b6352ef4f45c016e1de3651",
+        "supported": true,
+        "reason": "Direct definition on PDF31."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF32 names class as a reserved keyword used for program structure, not a variable name.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "4b016dd00049b7575d402120",
+        "supported": true,
+        "reason": "Cited paragraph supplies both keyword status and restriction."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "Both required fragments from PDF33 are in final context; cited continuation explains evaluate-without-display and print with matching example.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "30778f61bef932f3ed9263c7",
+        "supported": true,
+        "reason": "Cited paragraph supplies evaluation, display restriction and print example; preceding context establishes script mode."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF34 supports string repetition and integer requirement.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "dfd307858f548598142b0ab2",
+        "supported": true,
+        "reason": "Both required conditions are explicit in cited chunk."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF39 explicitly says no rounding, chops fraction, and contains both examples.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "9d18da86eebbf287b14ae350",
+        "supported": true,
+        "reason": "Definition and examples match cited text."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF43 says statements do not run until called; this answers the question about defining versus calling.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "396ee1406052125e0fad32af",
+        "supported": true,
+        "reason": "Cited flow-of-execution paragraph explicitly supports the claim."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF44 explicitly says local means exists only inside the function.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "29439b00e0581d30f1842a9b",
+        "supported": true,
+        "reason": "Local-variable paragraph supports scope restriction."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 2,
+    "reason": "Final context supports fruitful-return and void-None distinction, but the one citation only defines fruitful functions, not void functions. Correct contextual answer with incomplete citation attachment.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "supported": false,
+        "reason": "dd1bf chunk lacks void/None definition; that is in other available chunks c683 and cfe91."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      false
+    ],
+    "context_grade": 0,
+    "reason": "No final-context passage establishes evaluation before calling. PDF48 argument definition and PDF41 composition example cannot ground the timing claim; required PDF44 passage is absent.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "dd1bf77ddb19877772dc93ab",
+        "supported": false,
+        "reason": "Cited glossary describes value-to-parameter assignment, not evaluation order."
+      }
+    ],
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "context_grade": 2,
+    "reason": "PDF57 explicitly names refactoring and the same purpose.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "3bd0782d554b96a9c34d13c0",
+        "supported": true,
+        "reason": "Cited passage directly contains the requested definition."
+      }
+    ],
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      false,
+      true
+    ],
+    "context_grade": 2,
+    "reason": "Function placement and triple quoting are supported, but extending the definition to classes/modules is not supported by final context.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [
+      {
+        "id": "2ed8e23bdbcbb3742799992f",
+        "supported": false,
+        "reason": "PDF57 describes functions only, not classes/modules."
+      },
+      {
+        "id": "1f28fd86536dfc10a201af4c",
+        "supported": true,
+        "reason": "PDF57 continuation explicitly supports triple-quote convention."
+      }
+    ],
+    "answer_grade": 1
+  },
+  {
+    "query_id": "dev-absent-01",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal with no price or speculation. Corpus audit finds PythonAnywhere recommendations but no subscription price.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "dev-absent-02",
+    "citation_support": [],
+    "context_grade": null,
+    "reason": "Explicit refusal with no GHz claim. Setup passages and full-corpus absence audit contain no CPU clock requirement.",
+    "reviewer": "Codex (AI), source-based offline review; not human certification",
+    "review_status": "AI-reviewed",
+    "human_reviewed": false,
+    "trace_sha256": "3f493b8f1f55b62690916c91361a3fc8358da9a78e37a0fa072195dda1fbb739",
+    "citation_reviews": [],
+    "abstention_correct": true
+  }
+]
